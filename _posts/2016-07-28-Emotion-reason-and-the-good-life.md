@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Emotion, reason, and the good life
+description: A long-form essay about episode 94 of the podcast Very Bad Wizards.
 comments: true
 ---
 
