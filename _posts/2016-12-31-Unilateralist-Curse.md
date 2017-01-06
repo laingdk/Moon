@@ -1,6 +1,7 @@
 ---
 layout: post
 title: The Unilateralist’s Curse – Summary and Commentary
+comments: true
 ---
 
 Imagine it's the year 2070, and among the thousands of computer scientists in the world, there are now ten who have independently figured out how to create an artificial general intelligence (AGI). None of them have gone ahead with it yet. They're all trying to ascertain whether such a development would be good or bad for humanity.
