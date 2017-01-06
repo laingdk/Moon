@@ -26,11 +26,11 @@ layout: compress
                         {% if post.project == null %}
                     <ul>
                         <li class="wow fadeInLeft" data-wow-duration="1.5s">
+                            <a>{{ post.date | date_to_string }}</a>
                             <a class="zoombtn" href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
-                            <p>{{ post.date | date_to_string }}</p>
                             <p>{{ post.description }}</p>
                             <!--<a href="{{ site.url }}{{ post.url }}" class="btn zoombtn">Read More</a>-->
-                            {% if page.reading_time %}
+                            {% if site.reading_time %}
                             <p class="reading-time">
                                 <i class="fa fa-clock-o"></i>
                             {% include read-time.html %}
