@@ -1,6 +1,7 @@
 ---
 layout: post
 title: The Unilateralist’s Curse – Summary and Commentary
+comments: true
 ---
 
 Imagine it's the year 2070, and among the thousands of computer scientists in the world, there are now ten who have independently figured out how to create an artificial general intelligence (AGI). None of them have gone ahead with it yet. They're all trying to ascertain whether such a development would be good or bad for humanity.
@@ -9,7 +10,7 @@ Each of these ten researchers is familiar with the intricate difficulties of the
 
 Let's say none of them have quite solved the control problem, and thus if any one of them goes through with the initiative, the consequences will be harmful. Crowds are smart, and the *average* judgment of the value of creating the AGI will probably be more accurate than the judgments of most individuals. But there is some variance in these judgments, and if the variance is large enough, there may be one or two researchers who incorrectly decide to proceed with their creation.
 
-![](../assets/img/ai_vis-1.png)
+![](../assets/img/unilateralist_curse/ai_vis-1.png)
 
 This is an example the *unilateralist's curse*, a phenomemon described in a [2016 paper](http://dx.doi.org/10.1080/02691728.2015.1108373) by Nick Bostrom, Thomas Douglas, and Anders Sandberg. The curse occurs when...
 
@@ -28,8 +29,31 @@ To mitigate the unilateralist's curse, the authors propose a Principle of Confor
 
 The proposed model for the unilateralist's curse is reasonable for perfect Bayesian agents, and perhaps for certain types of group-level agents. But for humans, it makes assumptions that don't always hold. For example, I expect that on many issues, human judgment of the value of a given initiative would be bimodal, not Gaussian. It's much more natural and much more common to define oneself as decidedly for or against a proposal than to successfully ascertain one's uncertainty.
 
-![](../assets/img/bimodal-1.png)
+![](../assets/img/unilateralist_curse/bimodal-1.png)
 
 Moreover, these judgments are likely to be determined less by the true value of the initiative than by heuristics and biases, many of which will favour either conformity or contrarianism to begin with. So, a principle of conformity may simply amplify existing group-level bias. It may also punish people who would rightly defy an erroneous crowd, as most revolutionary scientists have done.
 
 Still, there is a crucial insight at the core of the unilateralist's curse and the principle of conformity: if you can manage to conceptualize each of your beliefs as but a single instantiation of a randomly distributed collection of beliefs centered around the truth, you might find reason to shift that belief, if only slightly, toward the conformist view. Beyond that, just make sure to choose the right crowd.
+
+{% if page.comments %}
+<div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = '//laingdk-github-io.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+{% endif %}
