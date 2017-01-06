@@ -4,11 +4,11 @@ title: Emotion, reason, and the good life
 comments: true
 ---
 
-<a href="#1">1. Introduction</a>
-<a href="#2">2. Is morality contradictory?</a>
-<a href="#3">3. Evolution, game theory, and the limits of moral intuition</a>
-<a href="#4">4. Guilt-free utilitarianism</a>
-<a href="#5">5. Stoicism and personal wellbeing</a>
+<a href="#1">1. Introduction</a><br>
+<a href="#2">2. Is morality contradictory?</a><br>
+<a href="#3">3. Evolution, game theory, and the limits of moral intuition</a><br>
+<a href="#4">4. Guilt-free utilitarianism</a><br>
+<a href="#5">5. Stoicism and personal wellbeing</a><br>
 <a href="#6">6. What to do next</a>
 <h1 id="1">Introduction</h1>
 In <a href="http://verybadwizards.com/episodes/94" target="_blank">Episode 94 of the podcast Very Bad Wizards</a>, the philosopher Tamler Sommers and the psychologist Dave Pizarro discuss whether emotions should play any role in forming our beliefs and guiding our actions. They consider two relevant philosophies that are present in today’s culture: utilitarianism and Stoicism.
