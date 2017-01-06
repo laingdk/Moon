@@ -1,3 +1,9 @@
+---
+layout: post
+title: Emotion, reason, and the good life
+comments: true
+---
+
 <a href="#1">1. Introduction</a>
 <a href="#2">2. Is morality contradictory?</a>
 <a href="#3">3. Evolution, game theory, and the limits of moral intuition</a>
