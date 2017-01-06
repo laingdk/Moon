@@ -1,6 +1,7 @@
 ---
 layout: post
 title: The Unilateralist’s Curse – Summary and Commentary
+description: An explanation of a phenomenon in social epistemology, formulated in a 2016 paper by Bostrom, Douglas, & Sandberg.
 comments: true
 ---
 
