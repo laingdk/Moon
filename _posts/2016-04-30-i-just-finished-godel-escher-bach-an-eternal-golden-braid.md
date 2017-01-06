@@ -7,7 +7,7 @@ comments: true
 
 ...and it was really something.
 
-I started the book in 2011, and I even <a href="https://betweenbeats.wordpress.com/2011/05/27/useless-knowledge-and-its-uses/" target="_blank">wrote a post about it</a>. Now that I've read the whole thing, and with slightly more sophistication than I had when I was eighteen, I can see that I originally misread it in several ways. Which is forgivable.
+I started the book in 2011, but didn't make it all the way through. Now that I've read the whole thing, and with slightly more sophistication than I had when I was eighteen, I can see that I originally misread it in several ways. Which is forgivable.
 
 Douglas Hofstadter's 1979 masterpiece <em>Gödel, Escher, Bach</em> spans 777 pages, and weaves together topics as diverse as music, math, art, Zen, communication, intelligence, and molecular genetics. It's putatively about how a sense of self can arise from fundamentally selfless ingredients. Insofar as it answers that question, it does so better than any other source I've ever come across. The argument is never laid out explicitly, so in this post I will attempt to reproduce it in its barest form. It won't be airtight, but that was never Hofstadter's aim. Here goes:
 
