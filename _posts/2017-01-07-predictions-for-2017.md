@@ -35,8 +35,6 @@ Justin Trudeau's approval ratings will be below 65% by the end of the year: 80%
 
 More than 15 million VR headsets will be sold: 80%
 
-No album will sell more than 20 million copies: 80%
-
 The war in Syria will not be over by the end of the year: 70%
 
 Donald Trump will meet with Vladimir Putin in the first 100 days of his presidency: 60%
