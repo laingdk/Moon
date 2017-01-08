@@ -7,7 +7,7 @@ comments: true
 
 ### World
 
-Global poverty rates be lower at the end of the year than they currently are: 99%
+Global poverty rates will be lower at the end of the year than they currently are: 99%
 
 Donald Trump won't be assassinated: 99%
 
