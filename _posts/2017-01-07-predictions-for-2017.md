@@ -29,9 +29,9 @@ The death count in the Philippine Drug War will be higher in 2017 than it was i
 
 There will be no AI-related headlines that seem bigger than the AlphaGo win: 80%
 
-Justin Trudeau's approval ratings will be below 60% by the end of the year: 80%
+Justin Trudeau's approval ratings will be below 65% by the end of the year: 80%
 
-...but above 45%: 80%
+...but above 50%: 80%
 
 More than 15 million VR headsets will be sold: 80%
 
