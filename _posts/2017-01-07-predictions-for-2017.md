@@ -39,7 +39,9 @@ No album will sell more than 20 million copies: 80%
 
 The war in Syria will not be over by the end of the year: 70%
 
-Donald Trump will meet with Vladimir Putin in the first 100 days of his presidency: 70%
+Donald Trump will meet with Vladimir Putin in the first 100 days of his presidency: 60%
+
+Global nuclear weapons stockpiles will be higher by the end of 2017 than they are currently (~10,000 stockpiled warheads): 60%
 
 Kevin O'Leary will be the next leader of the Conservative Party of Canada: 60%
 
