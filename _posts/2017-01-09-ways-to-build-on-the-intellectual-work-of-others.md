@@ -1,61 +1,97 @@
 ---
 layout: post
 title: Ways to build on the intellectual work of others
-description: A list of formal and informal ways to contribute to intellectual progress by drawing directly on the work of others.
+description: A list of formal and informal ways to contribute to intellectual progress without relying on originality.
 comments: true
 published: false
 ---
 
-I often hear intellectuals say that they want others to build on their ideas. But I'm rarely clear on how to do this. There would be no point in simply declaring agreement, since I don't have especially high status.
+I often hear intellectuals say that they want others to build on their ideas. Unfortunately, since intellectual work is abstract, there is rarely a clear set of next steps to be taken. This causes many capable people, who are motivated to contribute, to mostly sit around waiting for original ideas. Meanwhile, plenty of old, promising ideas end up amounting to nothing.
 
-I doubt I'm the only one who feels this way. There are lots of smart, hard-working people who would be glad to contribute to the intellectual work of others, but mostly sit around waiting for original ideas. This need not be so. 
-
-I'm compiling a list of ways to contribute to the work of others. If you'd like to contribute to my project, see below.
+So I'm compiling a list of ways to contribute to the intellectual work of others. If you'd like to contribute to this project, well, see below. Hopefully you'll be well-furnished with ideas.
 
 ## Improving or expanding presentability
 
-Summarize.
+#### Summarize.
+- Cole's Notes
+- Ethical Systems book summaries
 
-Share your confusion.
+#### Share your confusion.
+- People in comments sections
+- Student in class
 
-Paraphrase for a different audience.
+#### Present the material to a different audience.
+- Wait But Why
+- Obama Administration AI report
 
-Transfer to a different medium.
+#### Transfer to a different medium.
+- Kurzgezagt
+- Surely You're Joking, Mr. Feynman!
+- Rationality: AI to Zombies
 
-Transfer to a different level of formality.
+#### Transfer to a different level of formality.
+- Superintelligence
 
-Share and promote the author's work.
-
+#### Share and promote the author's work.
+- Steven Pinker on Twitter
 
 ## Engaging directly
 
-Generate further examples.
+#### Generate further examples.
+-
 
-Generate counterexamples.
+#### Generate counterexamples.
+-
 
-Generalize to a broader view.
+#### Generalize to a broader view.
+-
 
-Provide relevant data.
+#### Situate the ideas within a taxonomy.
+- 
 
-Suggest names for unnamed concepts.
+#### Provide relevant data.
+- Our World In Data
 
-Supply relevant expertise.
+#### Suggest names for unnamed concepts.
+- Kevin Simler
 
-Deduce further implications or predictions.
+#### Supply relevant expertise or perspective.
+- 
 
-Deduce actionable takeaways.
+#### Deduce further implications or predictions.
+- 
+
+#### Deduce actionable takeaways.
+- 
+
+#### Apply similar analysis to a different problem or situation.
+- Age of Em
 
 ## Enabling further work
 
-Share similar work that the author may not know of.
+#### Share similar work that the author may not know of.
+- 
 
-Offer writing/editing suggestions.
+#### Offer writing/editing suggestions.
+- 
 
-Offer specialized skills, especially computer related.
+#### Offer specialized skills, especially computer related.
+- 
 
-Offer 
+#### Offer to do menial work.
+- 
 
-## Drawing inspiration
+#### Donating money.
+- 
 
-Apply similar analysis to a different problem or situation.
+#### Offering payment in exchange for completion of more work.
+- 
+
+#### Referring people who might be more capable or motivated than you are.
+- 
+
+#### Take the lead on organizing group goals.
+- 
+
+
 
