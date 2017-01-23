@@ -43,7 +43,7 @@ The only condition where the market value was reduced but not negated was when t
 
 I'm tempted to say that my simulations have shown that real-world information asymmetry isn't as destructive as Akerlof's example would have us believe. But the best-case result is a 96% shrinkage, so I can't offer much consolation by way of the math.
 
-However, there is one last false assumption that all of these models are making. The assumption is that buyers and sellers in the real world are perfectly rational and perfectly self-interested. Traditional economics assumed this for centuries until the late 20th century, when the psychologists Daniel Kahneman and Amos Tversky showed that it was false.
+However, there is one last false assumption that all of these models are making. The assumption is that buyers and sellers in the real world are perfectly rational and perfectly self-interested. Traditional economics assumed this for centuries until the late 20th century, when the psychologists Daniel Kahneman and Amos Tversky [showed that it was false](https://en.wikipedia.org/wiki/Behavioral_economics).
 
 People aren't perfectly rational: they don't go around maximizing expected utility (i.e. value * probability) whenever they have to make a decision under uncertainty. Instead, they use heuristics – rules of thumb – most of which are better suited to evading tigers than to navigating a modern economic environment. 
 
@@ -95,4 +95,4 @@ where $t$ is the true value of the car, and $r$ is the overall average value, wh
 
 So, there is a 68% chance that the buyer's offer will be between the overall average and the true value of the car in question, and there is a 16% chance that the offer will be more extreme than the true value (whether the true value is more or less than the average). Note that this randomization affects both high-value *and* low-value cars; it is thus possible that even a lemon will fail to sell, just as it is now possible that a peach will successfully sell.
 
-If you'd like to play with the simulations, I invite you to check out my code on GitHub.
+If you'd like to play with the simulations, I invite you to check out my code on [GitHub](https://github.com/laingdk/lemons).
