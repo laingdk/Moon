@@ -43,7 +43,7 @@ The only condition where the market value was reduced but not negated was when t
 
 I'm tempted to say that my simulations have shown that real-world information asymmetry isn't as destructive as Akerlof's example would have us believe. But the best-case result is a 96% shrinkage, so I can't offer much consolation by way of the math.
 
-However, there is one last false assumption that all of these models are breaking. The assumption is that buyers and sellers in the real world are perfectly rational and perfectly self-interested. Traditional economics assumed this for centuries until the late 20th century, when the psychologists Daniel Kahneman and Amos Tversky showed that it was false.
+However, there is one last false assumption that all of these models are making. The assumption is that buyers and sellers in the real world are perfectly rational and perfectly self-interested. Traditional economics assumed this for centuries until the late 20th century, when the psychologists Daniel Kahneman and Amos Tversky showed that it was false.
 
 People aren't perfectly rational: they don't go around maximizing expected utility (i.e. value * probability) whenever they have to make a decision under uncertainty. Instead, they use heuristics – rules of thumb – most of which are better suited to evading tigers than to navigating a modern economic environment. 
 
