@@ -89,7 +89,7 @@ However, I didn't use an explicit Bayesian model for how the buyer would update 
 
 Instead, I built in some straight-up randomness so that all cars would have some chance of selling, even if they were above the mean value. So, for each of my models with partial asymmetry, the buyer's offer is drawn from a normal random variable located at the midpoint between the overall average value and the true value of the car in question. The standard deviation of the random variable is half the interval between the overall average value and the true value:
 
-$$X \sim \mathcal{N}(r+\left\frac{t-r}{2}\right, \lvert\frac{t-r}{2}\rvert^{2}))$$
+$$X \sim \mathcal{N}\left(r+\left(\frac{t-r}{2}\right), \left\lvert\frac{t-r}{2}\right\rvert^{2}\right)$$
 
 where *t* is the true value of the car, and *r* is the overall average value, which is used as the "prior."
 
