@@ -55,7 +55,7 @@ With these facts in mind, a different model of trading comes into view: trading 
 
 ### Computing the market value
 
-To compute what I call the market value, I use the sum of the values of all cars sold, minus the sum of the values of all cars not sold:
+To compute what I call the market value, I used the sum of the values of all cars sold, minus the sum of the values of all cars not sold:
 
 $$\text{Market value} = \sum_{0}^{n}s_i - \sum_{0}^{m}k_j$$
 
@@ -65,9 +65,9 @@ When there is no information asymmetry, every car is sold, so,
 
 $$\sum_{0}^{m}k_j = 0$$
 
-This is a special case in which the market value is maximized. Now, I'm interested in how different assumptions affect market *shrinkage*, but I don't care so much about the *absolute* value of a given market, which depends on factors other than information asymmetry.
+This is a special case in which the market value is maximized. Now, I was interested in how different assumptions affect market *shrinkage*, but I didn't care so much about the *absolute* value of a given market, which depends on factors other than information asymmetry.
 
-So, for each market distribution, I scale the market value by dividing it by the maximum market value, i.e.,
+So, for each market distribution, I scaled the market value by dividing it by the maximum market value, i.e.,
 
 $$\text{Scaled market value} = \frac{\sum_{0}^{n}s_i - \sum_{0}^{m}k_j}{\sum_{0}^{n}s_i}$$
 
@@ -81,13 +81,13 @@ $$\text{offer} = \frac{\sum_0^m p_i v_i}{m}$$
 
 where *p*<sub>i</sub> is the probability of getting car *i*, and *v*<sub>i</sub> is the value of car *i*.
 
-This assumes that the buyers know the probabilities and values of each car in the market, even if they can't tell which cars are which. I use the same assumption in my model of markets with complete information asymmetry.
+This assumes that the buyers know the probabilities and values of each car in the market, even if they can't tell which cars are which. I used the same assumption in my model of markets with complete information asymmetry.
 
-I formulate partial asymmetry somewhat differently. I assume that buyers know the mean value of the cars, and that they use this as a prior probability for determining the optimal offer of a given car, once they've seen it.
+I formulated partial asymmetry somewhat differently. I assumed that buyers know the mean value of the cars, and that they use this as a prior probability for determining the optimal offer of a given car, once they've seen it.
 
-However, I didn't use an explicit Bayesian model for how the buyer would update on her prior after seeing the car. The reason for this was that unless the evidence the buyer sees causes her to update *beyond* the true value of the car, then overall effect on the market would still be that only cars below the mean value would sell. For example, if a car is worth \$900, the buyer would need to shift her prior of \$750 upwards by a full \$150 in order for the car to sell. For this to occur, the buyer would have to see not only strong evidence, but *false* evidence of the value of the car. I couldn't think of a simple way to operationalize this possibility, so I ignored it.
+However, I didn't use an explicit Bayesian model for how the buyer would update on her prior after seeing the car. The reason for this was that unless the evidence the buyer sees causes her to update *beyond* the true value of the car, the overall effect on the market would still be that only cars below the mean value would sell. For example, if a car is worth \$900, the buyer would need to shift her prior of \$750 upwards by a full \$150 in order for the car to sell. For this to occur, the buyer would have to see not only strong evidence, but *false* evidence of the value of the car. I couldn't think of a simple way to operationalize this possibility, so I ignored it.
 
-Instead, I build in some straight-up randomness so that all cars would have some chance of selling, even if they were above the mean value. So, for each of my models with partial asymmetry, the buyer's offer is drawn from a normal random variable located at the midpoint between the overall average value and the true value of the car in question. The standard deviation of the random variable is half the interval between the overall average value and the true value:
+Instead, I built in some straight-up randomness so that all cars would have some chance of selling, even if they were above the mean value. So, for each of my models with partial asymmetry, the buyer's offer is drawn from a normal random variable located at the midpoint between the overall average value and the true value of the car in question. The standard deviation of the random variable is half the interval between the overall average value and the true value:
 
 $$X \sim \mathcal{N}(r+(\frac{t-r}{2}), |\frac{t-r}{2}|^{2}))$$
 
