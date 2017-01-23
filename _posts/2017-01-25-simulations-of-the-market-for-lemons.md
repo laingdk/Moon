@@ -59,7 +59,7 @@ To compute what I call the market value, I use the sum of the values of all cars
 
 $$\text{Market value} = \sum_{0}^{n}s_i - \sum_{0}^{m}k_j$$
 
-where \$$ s_i $$ is the value of a car that sold, and $k_j$ is the value of a car that did not sell (i.e. was "kept").
+where \$\$ s_i $$ is the value of a car that sold, and $k_j$ is the value of a car that did not sell (i.e. was "kept").
 
 When there is no information asymmetry, every car is sold, so,
 
