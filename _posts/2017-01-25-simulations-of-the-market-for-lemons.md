@@ -31,55 +31,7 @@ Now, Akerlof's example is pretty unrealistic. (He knew this.) Firstly, it's pret
 
 I decided to tinker with these assumptions to see how they affect market shrinkage. I simulated nine different formulations of the market for lemons, varying along two dimensions. The first dimension is the amount of information asymmetry, which ranges from "none" to "partial" to "complete". The second dimension is the plausibility of the distribution of cars' values. I considered the original dual market, in which half the cars are peaches and half are lemons, to be the least plausible. More plausible is a uniform distribution, and more plausible still is a normal distribution.
 
-In the table and chart below, I show the scaled market values under each simulation.
-
-<style>
-table {
-    border-collapse: separate
-}
-.square {
-    float:center;
-    position: relative;
-    width: 30%;
-    align:right;
-    margin:10%;
-    overflow:hidden;
-}
-</style>
-
-<table>
-	<tr>
-		<td colspan="2", rowspan="2",  align="center", style='border-left:none;border-top:none;border-right:none;border-bottom:none'><b>Simulations of the market for lemons</b></td>
-		<td colspan="3", align="center"><i>Information asymmetry</i></td>
-	</tr>
-	<tr>
-		<td align="center"><b>None</b></td>
-		<td align="center"><b>Partial</b></td>
-		<td align="center"><b>Full</b></td>
-	</tr>
-	<tr>
-		<td rowspan="3">
-			<i>Distribution<br>
-			of cars' values
-			</i>
-		</td>
-		<td><b>Dual</b></td>
-		<td class="square", align="center">1</td>
-		<td class="square", align="center">-0.2275</td>
-		<td class="square", align="center">-0.3333</td>
-	</tr>
-		<td><b>Uniform</b></td>
-		<td class="square", align="center">1</td>
-		<td class="square", align="center">-0.1157</td>
-		<td class="square", align="center">-0.1667</td>
-	</tr>
-	</tr>
-		<td><b>Gaussian</b></td>
-		<td class="square", align="center">1</td>
-		<td class="square", align="center">0.0353</td>
-		<td class="square", align="center">-0.0812</td>
-	</tr>
-</table>
+In the chart below, I show the scaled market values under each simulation.
 
 ![](../assets/img/lemons/all_markets.png)
 
