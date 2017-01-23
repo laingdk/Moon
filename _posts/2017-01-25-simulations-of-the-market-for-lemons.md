@@ -3,7 +3,7 @@ layout: post
 title: Simulations of the market for lemons
 description: An introduction to information economics, and an exploration of variations of the market for lemons described in George Akerlof's landmark paper.
 comments: true
-published: false
+published: true
 ---
 
 The first lesson in economics is that in a free market, the price of a good tends to settle where the supply curve meets the demand curve:
