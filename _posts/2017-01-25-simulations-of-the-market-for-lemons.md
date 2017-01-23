@@ -59,7 +59,7 @@ To compute what I call the market value, I use the sum of the values of all cars
 
 $$\text{Market value} = \sum_{0}^{n}s_i - \sum_{0}^{m}k_j$$
 
-where \$\$ s_i $$ is the value of a car that sold, and $k_j$ is the value of a car that did not sell (i.e. was "kept").
+where *s*<sub>i</sub> is the value of a car that sold, and *k*<sub>j</sub> is the value of a car that did not sell (i.e. was "kept").
 
 When there is no information asymmetry, every car is sold, so,
 
@@ -79,7 +79,7 @@ In Akerlof's paper, buyers' offers were computed using expected utility:
 
 $$\text{offer} = \frac{\sum_0^m p_i v_i}{m}$$
 
-where $p_i$ is the probability of getting car $i$, and $v_i$ is the value of car $i$.
+where *p*<sub>i</sub> is the probability of getting car *i*, and *v*<sub>i</sub> is the value of car *i*.
 
 This assumes that the buyers know the probabilities and values of each car in the market, even if they can't tell which cars are which. I use the same assumption in my model of markets with complete information asymmetry.
 
@@ -91,7 +91,7 @@ Instead, I build in some straight-up randomness so that all cars would have some
 
 $$X \sim \mathcal{N}(r+(\frac{t-r}{2}), |\frac{t-r}{2}|^{2}))$$
 
-where $t$ is the true value of the car, and $r$ is the overall average value, which is used as the "prior."
+where *t* is the true value of the car, and *r* is the overall average value, which is used as the "prior."
 
 So, there is a 68% chance that the buyer's offer will be between the overall average and the true value of the car in question, and there is a 16% chance that the offer will be more extreme than the true value (whether the true value is more or less than the average). Note that this randomization affects both high-value *and* low-value cars; it is thus possible that even a lemon will fail to sell, just as it is now possible that a peach will successfully sell.
 
