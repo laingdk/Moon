@@ -6,6 +6,8 @@ comments: true
 published: true
 ---
 
+## Background
+
 The first lesson in economics is that in a free market, the price of a good tends to settle where the supply curve meets the demand curve:
 
 ![](../assets/img/lemons/equilibrium_price.png)
@@ -31,27 +33,7 @@ Now, Akerlof's example is pretty unrealistic. (He knew this.) Firstly, it's pret
 
 I decided to tinker with these assumptions to see how they affect market shrinkage. I simulated nine different formulations of the market for lemons, varying along two dimensions. The first dimension is the amount of information asymmetry, which ranges from "none" to "partial" to "complete". The second dimension is the plausibility of the distribution of cars' values. I considered the original dual market, in which half the cars are peaches and half are lemons, to be the least plausible. More plausible is a uniform distribution, and more plausible still is a normal distribution.
 
-In the chart below, I show the scaled market values under each simulation.
-
-![](../assets/img/lemons/all_markets.png)
-
-The red bars show the market values when there is no information asymmetry, and all trades occur. The green bars show the market values when there is complete information asymmetry, and only half of all trades occur (the ones where the cars' values are below average). Lastly, the blue bars show the market values when there is partial information asymmetry, and many below-average trades occur and few above-average trades occur.
-
-From these simulations, it's clear that no matter what the distribution of goods, even partial information asymmetry can ruin the market. Not only is the total market value reduced, but it's actively negated; there are so many high-value goods that go to waste that the participants in the market would have been better off if no cars had been supplied in the first place.
-
-The only condition where the market value was reduced but not negated was when the goods were normally distributed and the information asymmetry was partial. However, this condition is especially dependent on the simulation parameters, which I personally chose according to my own judgment. And I am not an economist.
-
-I'm tempted to say that my simulations have shown that real-world information asymmetry isn't as destructive as Akerlof's example would have us believe. But the best-case result is a 96% shrinkage, so I can't offer much consolation by way of the math.
-
-However, there is one last false assumption that all of these models are making. The assumption is that buyers and sellers in the real world are perfectly rational and perfectly self-interested. Traditional economics assumed this for centuries until the late 20th century, when the psychologists Daniel Kahneman and Amos Tversky [showed that it was false](https://en.wikipedia.org/wiki/Behavioral_economics).
-
-People aren't perfectly rational: they don't go around maximizing expected utility (i.e. value * probability) whenever they have to make a decision under uncertainty. Instead, they use heuristics – rules of thumb – most of which are better suited to evading tigers than to navigating a modern economic environment. 
-
-People aren't perfectly self-interested: they don't go around exploiting each other at every opportunity. They feel empathy; they feel shame; they trust when they can; they retaliate when they must.
-
-With these facts in mind, a different model of trading comes into view: trading could take place despite information asymmetry if buyers were perfectly trustworthy and sellers were perfectly honest. Fanciful as this may seem, it adds another dimension to the problem and another route to a solution. 
-
-## Methodological appendix
+## What I did
 
 ### Computing the market value
 
@@ -95,4 +77,28 @@ where *t* is the true value of the car, and *r* is the overall average value, wh
 
 So, there is a 68% chance that the buyer's offer will be between the overall average and the true value of the car in question, and there is a 16% chance that the offer will be more extreme than the true value (whether the true value is more or less than the average). Note that this randomization affects both high-value *and* low-value cars; it is thus possible that even a lemon will fail to sell, just as it is now possible that a peach will successfully sell.
 
+## What I found
+
+In the chart below, I show the scaled market values under each simulation.
+
+![](../assets/img/lemons/all_markets.png)
+
+The red bars show the market values when there is no information asymmetry, and all trades occur. The green bars show the market values when there is complete information asymmetry, and only half of all trades occur (the ones where the cars' values are below average). Lastly, the blue bars show the market values when there is partial information asymmetry, and many below-average trades occur and few above-average trades occur.
+
 If you'd like to play with the simulations, I invite you to check out my code on [GitHub](https://github.com/laingdk/lemons).
+
+## What I think
+
+From these simulations, it's clear that no matter what the distribution of goods, even partial information asymmetry can ruin the market. Not only is the total market value reduced, but it's actively negated; there are so many high-value goods that go to waste that the participants in the market would have been better off if no cars had been supplied in the first place.
+
+The only condition where the market value was reduced but not negated was when the goods were normally distributed and the information asymmetry was partial. However, this condition is especially dependent on the simulation parameters, which I personally chose according to my own judgment. And I am not an economist.
+
+I'm tempted to say that my simulations have shown that real-world information asymmetry isn't as destructive as Akerlof's example would have us believe. But the best-case result is a 96% shrinkage, so I can't offer much consolation by way of the math.
+
+However, there is one last false assumption that all of these models are making. The assumption is that buyers and sellers in the real world are perfectly rational and perfectly self-interested. Traditional economics assumed this for centuries until the late 20th century, when the psychologists Daniel Kahneman and Amos Tversky [showed that it was false](https://en.wikipedia.org/wiki/Behavioral_economics).
+
+People aren't perfectly rational: they don't go around maximizing expected utility (i.e. value * probability) whenever they have to make a decision under uncertainty. Instead, they use heuristics – rules of thumb – most of which are better suited to evading tigers than to navigating a modern economic environment. 
+
+People aren't perfectly self-interested: they don't go around exploiting each other at every opportunity. They feel empathy; they feel shame; they trust when they can; they retaliate when they must.
+
+With these facts in mind, a different model of trading comes into view: trading could take place *despite* information asymmetry if buyers were perfectly *trustworthy* and sellers were perfectly *honest*. Fanciful as this may seem, it adds another dimension to the problem and another route to a solution. 
