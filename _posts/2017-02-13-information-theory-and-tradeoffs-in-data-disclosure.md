@@ -192,4 +192,4 @@ Wishing to protect the privacy of the people in the dataset, say we generalize t
 
 An analyst might now assume that IQ has no effect on income, which would seem very unlikely if we had released the original dataset.
 
-In data disclosure, there is only one absolute: a dataset is not perfectly secure unless it is perfectly uninformative. Beyond that, database managers and analysts need to find an appropriate balance between security and usefulness. People may disagree on the specifics of where to find that balance, but I think it will help to frame the problem in terms of specificity and generality.
+In data disclosure, there is only one absolute: a dataset is not perfectly secure unless it is perfectly uninformative. Beyond that, database managers and analysts need to find an appropriate balance between security and usefulness. People may disagree on the specifics of where to find that balance, but I think it will help to frame the problem in terms of generalization and specification.
