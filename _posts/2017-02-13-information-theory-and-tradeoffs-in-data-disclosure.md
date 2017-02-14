@@ -138,7 +138,7 @@ As a data science student, I am learning to specialize in bits. I am learning to
 | 5   | 100 | 83,640 |
 | 6   | ?   | ?      |
 
-When I do *statistical* inference, I use specific data to make general claims about the patterns that produced them. I'm doing statistics when I say that the sample mean income in this dataset is \$72,418. When I do *probabilistic inference*, I use general patterns to predict what is likely to occur when a new, specific data point is revealed. I'm doing probability when I say that there is a 1% probability that the sixth person makes over \$100,000.
+When I do *statistical* inference, I use specific data to make general claims about the patterns that produced those data. I'm doing statistics when I say that the sample mean income in this dataset is \$72,418. When I do *probabilistic* inference, I use general patterns to predict what is likely to occur when a new, specific data point is revealed. I'm doing probability when I say that there is a 1% probability that the sixth person makes over \$100,000.
 
 This just scratches the surface of what I can do. The more your data are scattered across the internet, the easier it is to identify you and learn things about you that you might wish to keep private. One reason for this is that data tables can be pulled from disparate sources and joined together. Perhaps I know that you are person #4 in the above dataset:
 
@@ -165,11 +165,11 @@ I now know more about you than perhaps you would like me to:
 
 Each piece of information that I have about you could be used to link you to yet another table. Each bit could entail another. The more I know, the more I *can* know.
 
-Of course, data science is hyped up not because is gives the power to invade people's privacy, but because it promises to solve people's problems. In the case of medical data, it is easy to see how open access to data could be invaluable. It could help with the development of treatments for future patients who will suffer from the same problems people suffer from today.
+Of course, data science is exciting not because is gives the power to invade people's privacy, but because it promises to solve people's problems. In the case of medical data, it is easy to see how open access to data could be valuable. It could help with the development of treatments for future patients who will suffer from the same problems people suffer from today.
 
-Thankfully, there are several ways to protect a dataset against privacy threats. These methods all come back to information theory and the moderation of specificity and generality in communication.
+Thankfully, there are several ways to protect a dataset against privacy threats. These methods all come back to information theory and the moderation of specificity and generality.
 
-To protect against privacy threats, instead of contracting the hypothesis space (i.e. communicating information), we are expanding the hypothesis space (i.e. withholding information). Here is the first dataset again, with greater generality:
+To protect against privacy threats, instead of contracting the hypothesis space (i.e. communicating information), we are expanding the hypothesis space (i.e. withholding information). Here is the first dataset again, but with greater generality than before:
 
 | ID  | IQ      | Income |
 | --: | ------: | -----: |
