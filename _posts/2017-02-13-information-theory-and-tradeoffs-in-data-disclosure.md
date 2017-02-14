@@ -7,6 +7,7 @@ published: true
 ---
 
 The main point of this post is to show how generalization and specification underpin many technical and social aspects of data science. I begin by explaining the basics of [information theory](https://en.wikipedia.org/wiki/Information_theory), and then I describe some implications for security and inference in the context of data disclosure.
+
 __________________________________________
 
 I am thinking of a letter in the Latin alphabet:
@@ -42,6 +43,23 @@ __________________________________________
 ↓↓↓
 
 ↓↓↓
+
+↓↓↓
+
+( ﾟ▽ﾟ)/
+
+↓↓↓
+
+↓↓↓
+
+↓↓↓
+
+↓↓↓
+
+↓↓↓
+
+↓↓↓
+
 __________________________________________
 
 
@@ -111,7 +129,6 @@ And that's information theory, the beating heart of the digital world.
 
 As a data science student, I am learning to specialize in bits. I am learning to navigate the generality and specificity of data in order to understand how things work, at whichever level matters most. For example, say I'm considering the following dataset:
 
-|-----+-----+--------|
 | ID  | IQ  | Income |
 |----:|----:|-------:|
 | 1   | 104 | 67,265 |
@@ -125,14 +142,12 @@ When I do *statistical* inference, I use specific data to make general claims ab
 
 This just scratches the surface of what I can do. The more your data are scattered across the internet, the easier it is to identify you and learn things about you that you might wish to keep private. One reason for this is that data tables can be pulled from disparate sources and joined together. Perhaps I know that you are person #4 in the above dataset:
 
-|-----+-----+--------|
 | ID  | IQ  | Income |
 |----:|----:|-------:|
 | 4   | 110 | 55,781 |
 
 And then I gain access to a new dataset that I suspect you are also in:
 
-|-----+--------+--------+------------+------------+----------------|
 | ID  | Gender | Income | Admitted   | Departed   | Reason         |
 | --: | -----: | -----: | ---------: | ---------: | -------------: |
 | A   | Female | 44,149 | 01-03-2016 | 01-05-2016 | Flu            |
