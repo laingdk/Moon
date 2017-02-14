@@ -165,7 +165,7 @@ I now know more about you than perhaps you would like me to:
 
 Each piece of information that I have about you could be used to link you to yet another table. Each bit could entail another. The more I know, the more I *can* know.
 
-Of course, data science is exciting not because is gives the power to invade people's privacy, but because it promises to solve people's problems. In the case of medical data, it is easy to see how open access to data could be valuable. It could help with the development of treatments for future patients who will suffer from the same problems people suffer from today.
+Of course, data science is exciting not because is gives the power to invade people's privacy, but because it promises to solve people's problems. In the case of medical data, it is easy to see how open access could help researchers develop treatments for future patients who will suffer from the same problems people suffer from today.
 
 Thankfully, there are several ways to protect a dataset against privacy threats. These methods all come back to information theory and the moderation of specificity and generality.
 
@@ -192,4 +192,4 @@ Wishing to protect the privacy of the people in the dataset, say we generalize t
 
 An analyst might now assume that IQ has no effect on income, which would seem very unlikely if we had released the original dataset.
 
-In data disclosure, there is only one absolute: a dataset is not perfectly secure unless it is perfectly uninformative. Beyond that, database managers and analysts need to find an appropriate balance between security and usefulness. People may disagree on the specifics of where to find that balance, but I think it will help to frame the problem in terms of generalization and specification.
+In data disclosure, there is only one absolute: a dataset is not perfectly secure unless it is perfectly uninformative. Beyond that, database managers and analysts need to find an appropriate balance between security and usefulness. People may disagree on the specifics of where to find that balance, but I think it will help to frame the problem in terms of generalization and specification. This framework may also help individuals to think more clearly about the risks and benefits of disclosing their own data.
