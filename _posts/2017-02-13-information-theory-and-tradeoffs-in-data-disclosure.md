@@ -1,10 +1,13 @@
 ---
 layout: post
 title: Information theory and tradeoffs in data disclosure
-description: A series of examples that show the technical and social importance of the interplay between generality and specificity.
+description: A series of examples that show the technical and social importance of the interplay between generalization and specification in data science.
 comments: true
 published: true
 ---
+
+The main point of this post is to show how generalization and specification underpin many technical and social aspects of data science. I begin by explaining the basics of [information theory](https://en.wikipedia.org/wiki/Information_theory), and then I describe some implications for security and inference in the context of data disclosure.
+__________________________________________
 
 I am thinking of a letter in the Latin alphabet:
 
@@ -32,18 +35,13 @@ When your head is sufficiently scratched, scroll on down for the good stuff.
 
 __________________________________________
 
-`| | |`
+↓↓↓
 
-`V V V`
+↓↓↓
 
-`| | |`
+↓↓↓
 
-`V V V`
-
-`| | |`
-
-`V V V`
-
+↓↓↓
 __________________________________________
 
 
@@ -113,8 +111,9 @@ And that's information theory, the beating heart of the digital world.
 
 As a data science student, I am learning to specialize in bits. I am learning to navigate the generality and specificity of data in order to understand how things work, at whichever level matters most. For example, say I'm considering the following dataset:
 
+|-----+-----+--------|
 | ID  | IQ  | Income |
-| --: | --: | -----: |
+|----:|----:|-------:|
 | 1   | 104 | 67,265 |
 | 2   | 95  | 71,662 |
 | 3   | 105 | 83,744 |
@@ -122,20 +121,18 @@ As a data science student, I am learning to specialize in bits. I am learning to
 | 5   | 100 | 83,640 |
 | 6   | ?   | ?      |
 
-When I do statistical inference, I use specific data to make general claims about the patterns that produced them. I'm doing statistics when I say that the sample mean income in this dataset is \$72,418.
+When I do *statistical* inference, I use specific data to make general claims about the patterns that produced them. I'm doing statistics when I say that the sample mean income in this dataset is \$72,418. When I do *probabilistic inference*, I use general patterns to predict what is likely to occur when a new, specific data point is revealed. I'm doing probability when I say that there is a 1% probability that the sixth person makes over \$100,000.
 
-When I do probabilistic inference, I use general patterns to predict what is likely to occur when a new, specific data point is revealed. I'm doing probability when I say that there is a 1% probability that the sixth person makes over \$100,000.
+This just scratches the surface of what I can do. The more your data are scattered across the internet, the easier it is to identify you and learn things about you that you might wish to keep private. One reason for this is that data tables can be pulled from disparate sources and joined together. Perhaps I know that you are person #4 in the above dataset:
 
-This just scratches the surface of what I can do. The more your data are scattered across the internet, the easier it is to identify you and learn things about you that you might wish to keep private.
-
-One reason for this is that data tables can be pulled from disparate sources and joined together. Perhaps I know that you are person #4 in the above dataset:
-
+|-----+-----+--------|
 | ID  | IQ  | Income |
-| --: | --: | -----: |
+|----:|----:|-------:|
 | 4   | 110 | 55,781 |
 
 And then I gain access to a new dataset that I suspect you are also in:
 
+|-----+--------+--------+------------+------------+----------------|
 | ID  | Gender | Income | Admitted   | Departed   | Reason         |
 | --: | -----: | -----: | ---------: | ---------: | -------------: |
 | A   | Female | 44,149 | 01-03-2016 | 01-05-2016 | Flu            |
@@ -168,7 +165,7 @@ To protect against privacy threats, instead of contracting the hypothesis space 
 | 5   | 100-109 | high   |
 | 6   | ?       | ?      |
 
-Now it would be much harder to link the two tables together, and even if it were done, it would be unclear whether the linkages are accurate. So, greater generality in a dataset makes it more secure against invasions of privacy.
+Now it would be much harder to link the two tables together, and even if it were done, it would be unclear whether the linkages were accurate. So, greater generality in a dataset makes it more secure against invasions of privacy.
 
 But greater generality comes at the cost of usefulness for analysis. The more general the dataset, the less information (literally the fewer bits) it contains. This can lead to oversimplified understandings of the data. For example, imagine we have a dataset that shows the following relationship between IQ and income:
 
