@@ -18,7 +18,7 @@ Say I want to tell you which letter I chose, but the only symbols I can use are 
 
 `0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0`
 
-As long as we both agree on the order of the alphabet, this sequence of digits gets the message across. But it's wildly efficient. If I wanted to send you a message, I would require twenty-six characters for every letter. I would need 130 characters just to say "hello." Luckily, there is a more efficient way to translate an alphabet to binary. See if you can figure it out from the examples below:
+As long as we both agree on the order of the alphabet, this sequence of digits gets the message across. But it's wildly inefficient. If I wanted to send you a message, I would require twenty-six characters for every letter. I would need 130 characters just to say "hello." Luckily, there is a more efficient way to translate an alphabet to binary. See if you can figure it out from the examples below:
 
 Here is the letter `A`: `1 1 1 1 1`
 
