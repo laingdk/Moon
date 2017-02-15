@@ -22,11 +22,9 @@ As long as we both agree on the order of the alphabet, this sequence of digits g
 
 Here is the letter `A`: `1 1 1 1 1`
 
-And here is the letter `Z`: `0 0 0 0 1`
+And here is the letter `Z`: `0 0 0 0`
 
-Pretty nice so far, yes?
-
-Here is the letter `M`: `1 0 0 0` (It's not a typo. Only four characters for `M`.)
+Here is the letter `M`: `1 0 0 0`
 
 And the letter `N`: `0 1 1 1 1`
 
@@ -69,9 +67,7 @@ Let's say I want to send the letter `K`. In our alphabet example, you begin by n
 
 `1`
 
-You can think of this in several ways. It could mean, "the letter is in the first half of the alphabet." It could mean, "throw out the second half of the alphabet." Or it could be an affirmative answer to the question, "is the letter in the first half of the alphabet?"
-
-In any case, I have just helped your state of knowledge go from general...
+This means that the letter is in the first half of the alphabet. I have just helped your state of knowledge go from general...
 
 `A B C D E F G H I J K L M N O P Q R S T U V W X Y Z`
 
@@ -85,9 +81,7 @@ Now I send you the second digit:
 
 `0`
 
-This could mean, "the letter is in the second half of the remaining alphabet." It could mean, "throw out the first half of the remaining alphabet." Or it could be a negative answer to the question, "is the letter in the first half of the remaining alphabet?"
-
-(Note: at this point we had an odd number of remaining symbols, so the middle symbol counts as being in the first half.)
+This means that the letter is in the second half of the remaining alphabet. (At this point we had an odd number of remaining symbols, so the middle symbol counts as being in the first half.)
 
 Again, we've gone from general...
 
