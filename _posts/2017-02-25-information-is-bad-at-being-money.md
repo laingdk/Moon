@@ -6,7 +6,7 @@ comments: true
 published: true
 ---
 
-![](../assets/img/info_bad_at_being_money/info_vs_money.png)
+->![](../assets/img/info_bad_at_being_money/info_vs_money.png)<-
 
 What if, instead of paying money for your food, you had to implant in your upper pallate a small sensor that would send information to your insurance company about everything you eat? What if, instead of paying money for your new mattress, you had to put a camera on your wall and record your bedroom activities, all to be uploaded constantly and automatically to the mattress company's database?
  
