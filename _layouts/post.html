@@ -36,9 +36,11 @@ layout: compress
                 <div class="entry-meta">
                 {% include meta.html %}
                 </div>
+                <h3 class="title">
+                  {% include newsletter.html %}
+                </h3>
             </div>
         </div>
-        {% include newsletter.html %}
         {% if page.comments and site.disqus_shortname %}<section id="disqus_thread" class="animated fadeInUp"></section><!-- /#disqus_thread -->{% endif %}
     </header>
     {% include scripts.html %}
