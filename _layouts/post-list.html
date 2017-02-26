@@ -21,6 +21,11 @@ layout: compress
                         <i class="fa fa-home"></i>
                     </a>
                 </div>
+                <hr class="hr-line">
+                <h3 class="title">
+                  {% include newsletter.html %}
+                </h3>
+                <hr class="hr-line">
                 <div class="post-list">
                     {% for post in site.posts %}
                         {% if post.project == null %}
