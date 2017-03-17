@@ -8,7 +8,7 @@ comments: false
 
 Hi! I'm David. I used to teach writing and argumentation at Niagara College, and I was set on a life working with words. But over time, I became convinced that I could find more interesting challenges, and solve more urgent problems, by working with numbers. So, in September 2016 I enrolled in the Master of Data Science program at the University of British Columbia.
 
-I'm especially questions at the intersection of statistics, computer science, and philosophy:
+I'm especially interested in questions at the intersection of statistics, computer science, and philosophy:
 
 - How can we know what is true?
 - How can we know what is right?
