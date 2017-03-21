@@ -6,6 +6,10 @@ description: This page is an archive of all the articles I wrote for The Gist, a
 comments: true
 ---
 
+This page is an archive of all the articles I wrote for The Gist, an email newsletter for Canadians, between August 2015 and May 2016. The articles are listed in reverse chronological order.
+
+__________________________________
+
 <a href="http://www.cbc.ca/news/aboriginal/canada-shifting-position-un-declaration-indigenous-1.3571732">May 9th: Canada to implement indigenous rights declaration</a>
 
 At the United Nations’ Permanent Forum on Indigenous Issues, which begins today in New York City, Canada’s Indigenous and Northern Affairs Minister Carolyn Bennett will announce a formal shift in Canada’s stance on the UN Declaration on the Rights of Indigenous Peoples. The declaration was passed ten years ago by more than 140 countries — but not by the United States, Australia, New Zealand, and Canada.
