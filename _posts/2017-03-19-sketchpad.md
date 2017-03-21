@@ -1,5 +1,5 @@
 ---
-layout: project
+layout: post
 project: true
 title: Sketchpad
 description: A simple sketchpad that I made for fun.
