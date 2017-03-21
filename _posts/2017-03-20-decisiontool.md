@@ -1,5 +1,5 @@
 ---
-layout: project
+layout: post
 project: true
 title: Decision Tool
 description: A script for decision-making, which I made mostly just to try building a Python package.
