@@ -18,3 +18,7 @@ I'm especially interested in questions at the intersection of statistics, comput
 ### Contact me
 
 [davidkendalllaing@gmail.com](mailto:davidkendalllaing@gmail.com)
+
+### Download my résumé
+
+[LaingDavid_résumé.pdf](LaingDavid_résumé.pdf)
