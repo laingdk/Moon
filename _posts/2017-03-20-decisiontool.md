@@ -1,7 +1,7 @@
 ---
 layout: project
 project: true
-title: `decisiontool` – a Python package
+title: 'decisiontool' – a Python package
 description: A script for decision-making, which I made mostly just to try building a Python package.
 comments: true
 ---
