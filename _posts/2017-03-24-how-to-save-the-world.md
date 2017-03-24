@@ -1,12 +1,14 @@
 ---
 layout: post
 project: true
-title: How to save the world – Green College Lecture
-description: A lecture about existential risk that I gave at Green College, University of British Columbia.
+title: How to save the world – Green College lecture
+description: A lecture about existential risk that I gave at Green College, University of British Columbia, on March 13th, 2017.
 comments: true
 ---
  
 The universe’s history is unimaginably long, and its future will stretch longer still. If our species survives, there will be the potential for trillions of people to live happy, creative lives. But this potential will be lost if we cook the planet, nuke each other, or suffer a pandemic. We must therefore take responsibility for the reduction of existential risks, a task that is currently the focus of vanishingly few researchers. In this talk, I describe what might be done to mitigate threats to humankind.
+
+The talk runs for 31 minutes, and the rest is Q&A.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/6gMRGAZxeJM" frameborder="0" allowfullscreen></iframe>
 
@@ -16,7 +18,7 @@ The universe’s history is unimaginably long, and its future will stretch longe
 
 **Event info:**
 
-[How to Save the World – Green College](https://www.greencollege.ubc.ca/civicrm/event/info?reset=1&id=529)
+[How to save the world – Green College](https://www.greencollege.ubc.ca/civicrm/event/info?reset=1&id=529)
 
 **To learn more:**
 
