@@ -16,7 +16,7 @@ The universe’s history is unimaginably long, and its future will stretch longe
 
 **Event info:**
 
-[How to Save the World | Green College](https://www.greencollege.ubc.ca/civicrm/event/info?reset=1&id=529)
+[How to Save the World – Green College](https://www.greencollege.ubc.ca/civicrm/event/info?reset=1&id=529)
 
 **To learn more:**
 
