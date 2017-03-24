@@ -28,3 +28,4 @@ The talk runs for 31 minutes, and the rest is Q&A.
 - [Global Priorities Project](http://globalprioritiesproject.org/)
 - [Future of Life Institute](https://futureoflife.org/)
 - [Cambridge Centre for the Study of Existential Risk](http://cser.org/)
+- [80,000 Hours](https://80000hours.org/problem-profiles/global-priorities-research/)
