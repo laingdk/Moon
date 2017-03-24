@@ -1,7 +1,7 @@
 ---
 layout: post
 project: true
-title: How to save the world: Green College Member Series Lecture
+title: How to save the world – Green College Member Series Lecture
 description: A lecture about existential risk that I gave at Green College, University of British Columbia.
 comments: true
 ---
