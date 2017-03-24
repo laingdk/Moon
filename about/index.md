@@ -21,4 +21,4 @@ I'm especially interested in questions at the intersection of statistics, comput
 
 ### Download my résumé
 
-[LaingDavid_résumé.pdf](LaingDavid_résumé.pdf)
+[LaingDavid_résumé.pdf](../downloadable_files/LaingDavid_résumé.pdf)
