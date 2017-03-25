@@ -1,7 +1,7 @@
 ---
 layout: post
 project: true
-title: Summary of Jonathan Haidt's *The Righteous Mind*
+title: Summary of The Righteous Mind, by Jonathan Haidt
 description: I think everyone should read this book. But if you don't have time, you can read my summary instead.
 comments: true
 ---
