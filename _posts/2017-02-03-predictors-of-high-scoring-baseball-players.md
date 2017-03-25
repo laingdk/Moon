@@ -55,7 +55,7 @@ I also removed rows from the table in which the player played fewer than 100 gam
 
 To determine which variables can be used to predict the number of future runs, I used a statistical technique called linear regression. Linear regression is used to understand the relationship between two or more variables, and to make predictions about one of those variables based on information about the others. Mathematically, linear regression works by fitting a line through the data:
 
-![](technical_report_david_laing_files/figure-markdown_github/ave_vs_ind-1.png)
+![](../assets/technical_report_david_laing_files/figure-markdown_github/ave_vs_ind-1.png)
 
 The line can be described by an equation in the form *y* = *m**x* + *b*, where *y* is the dependent variable (the one we wish to predict), *x* is the independent variable (the one we already know), *b* is the y-intercept (the value of *y* when *x* = 0), and *m* is the slope of the line, which tells us how much of an increase in *y* should be expected for every unit increase in *x*. In the graph above, *m* would tell us how many more runs to expect for each added hit.
 
@@ -75,7 +75,7 @@ Results
 
 The graph below shows the estimated effects of each variable on the predicted number of runs per game in the next year in which the player appeared.
 
-![](technical_report_david_laing_files/figure-markdown_github/results-1.png)
+![](../assets/technical_report_david_laing_files/figure-markdown_github/results-1.png)
 
 If the variable is plotted in blue, there is a positive relationship between that variable and runs per game in the player's next year. If the variable is plotted in red, the relationship is negative. The decimal number accompanying each point corresponds to the predicted change in number of runs per game for every unit increase in each variable. For example, look at the variable at the top of the graph — runs per game. For every added run per game that a player scores in a given year, we should expect to see an extra 0.33 runs per game in the player's next year.
 
@@ -166,7 +166,7 @@ sjp.lm(fit,
        title = "Effects on runs per game in the player's next year")
 ```
 
-![](technical_report_david_laing_files/figure-markdown_github/batting-1.png)
+![](../assets/technical_report_david_laing_files/figure-markdown_github/batting-1.png)
 
 ``` r
 # Summarize the model results.
@@ -203,7 +203,7 @@ summary(fit)
 plot(fit)
 ```
 
-![](technical_report_david_laing_files/figure-markdown_github/batting-2.png)![](technical_report_david_laing_files/figure-markdown_github/batting-3.png)![](technical_report_david_laing_files/figure-markdown_github/batting-4.png)![](technical_report_david_laing_files/figure-markdown_github/batting-5.png)
+![](../assets/technical_report_david_laing_files/figure-markdown_github/batting-2.png)![](../assets/technical_report_david_laing_files/figure-markdown_github/batting-3.png)![](../assets/technical_report_david_laing_files/figure-markdown_github/batting-4.png)![](../assets/technical_report_david_laing_files/figure-markdown_github/batting-5.png)
 
 ``` r
 # Show session info.
