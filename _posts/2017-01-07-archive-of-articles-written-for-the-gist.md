@@ -1,8 +1,8 @@
 ---
 layout: post
 project: true
-title: Gist Archives
-description: This page is an archive of all the articles I wrote for The Gist, an email newsletter for Canadians, between August 2015 and May 2016.
+title: Archive of articles written for the Gist
+description: 90 articles that I wrote for the Gist, an email newsletter for Canadians, between August 2015 and May 2016.
 comments: true
 ---
 
