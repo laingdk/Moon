@@ -10,7 +10,7 @@ Below is a Shiny app that I made using data collected by the [Marshall Project](
 
 View my code on [GitHub](https://github.com/laingdk/shiny_crime_data).
 
-<iframe src="https://laingdk.shinyapps.io/shiny_crime_data/"></iframe>
+<iframe src="https://laingdk.shinyapps.io/shiny_crime_data/" style="border:none;width:500px;height:500px;"></iframe>
 
 
 
