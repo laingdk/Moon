@@ -1,8 +1,8 @@
 ---
 layout: post
 project: true
-title: Summary of technical experience
-description: A summary of technical work I've done, mostly during the Master of Data Science program at UBC.
+title: Summary of data science experience
+description: Projects and tasks I've done in machine learning, statistics, programming, and related topics.
 comments: true
 ---
 ## Machine learning
