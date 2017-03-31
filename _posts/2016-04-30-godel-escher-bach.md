@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "I just finished Gödel, Escher, Bach: An Eternal Golden Braid"
-description: Reflections on the most beautiful book ever written.
+description: Reflections on a beautiful book.
 comments: true
 ---
 
