@@ -222,7 +222,7 @@ On the left side of the graph, you see songs with small differences between musi
 
 This looked like a pretty strong pattern to me, but if I was going to do a fair test of my hypothesis, I realized that I should log-transform the pageviews to get more consistent dispersion. (If you click the plot, you can see an interactive version to find out which song is which.)
 
-[![](../assets/img/kendrick/log_pageviews_plot.png)](https://laingdk.shinyapps.io/kendrick_pageview_plot/)
+[![](../assets/img/kendrick/log_pageviews_plot.png)](https://laingdk.shinyapps.io/kendrick_pageview_plot/){:target="_blank"}
 
 It still looked to me like I had found a clear pattern, so I tried fitting a linear model to see if there is a statistically significant effect. I controlled for the album, which is important for two main reasons. Firstly, some albums have better reputations than others, which could draw in additional pageviews for a given song. Secondly, some albums are older than others, which means those pages have had more time to gather pageviews. So, controlling for the album controls for both the reputation of a given cluster of songs and their time period. For the stats geeks, here are the results of my model:
 
