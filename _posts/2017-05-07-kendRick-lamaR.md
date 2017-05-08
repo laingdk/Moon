@@ -155,7 +155,6 @@ kendrick %>%
         arrange(smart_sentiment) %>% head(5) %>% kable()
 ```
 
-<center>
 
 | track\_name               |  smart\_sentiment|
 |:--------------------------|-----------------:|
@@ -165,7 +164,6 @@ kendrick %>%
 | The Spiteful Chant        |        -0.5496250|
 | Hood Politics             |        -0.5460909|
 
-</center>
 
 And here are the top five most positive songs:
 
@@ -175,7 +173,6 @@ kendrick %>%
         arrange(desc(smart_sentiment)) %>% head(5) %>% kable()
 ```
 
-<center>
 
 | track\_name               |  smart\_sentiment|
 |:--------------------------|-----------------:|
@@ -185,7 +182,6 @@ kendrick %>%
 | untitled 06 &#124; 06.30.2014. |         0.1136667|
 | A.D.H.D                   |         0.1058750|
 
-</center>
 
 Listen to any of these songs, and I think you'll at least agree with their classification as positive or negative, if not their rankings.
 
@@ -294,7 +290,6 @@ album_words %>%
         head() %>% select(album_name, track_name, word, tf_idf) %>% kable()
 ```
 
-<center>
 
 | album\_name            | track\_name                               | word   |    tf\_idf|
 |:-----------------------|:------------------------------------------|:-------|----------:|
@@ -305,7 +300,6 @@ album_words %>%
 | good kid, m.A.A.d city | The Art of Peer Pressure                  | doo    |  0.0037251|
 | good kid, m.A.A.d city | Money Trees                               | bish   |  0.0035529|
 
-</center>
 
 ``` r
 # Reset the factor levels according to the tf-idf
