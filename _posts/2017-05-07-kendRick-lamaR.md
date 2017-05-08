@@ -45,12 +45,10 @@ The data have offered up [For Free? - Interlude](https://genius.com/5047115) as 
 </center>
 <br> I'm pretty satisfied with this answer. The song is dizzyingly complex, both lyrically and musically, and it's chock-full of symbolism, history, and wordplay.
 
-Runners-up are [Rigamortis](https://genius.com/Kendrick-lamar-rigamortus-lyrics) and [HiiiPower](https://genius.com/Kendrick-lamar-hiiipower-lyrics):
+Runner-up is [Rigamortis](https://genius.com/Kendrick-lamar-rigamortus-lyrics):
 
 <center>
-<iframe width="280" height="157" align="middle" src="https://www.youtube.com/embed/sBvngg87998" frameborder="0" allowfullscreen>
-</iframe>
-<iframe width="280" height="157" align="middle" src="https://www.youtube.com/embed/RT2ZCdPVLAs" frameborder="0" allowfullscreen>
+<iframe width="560" height="315" align="middle" src="https://www.youtube.com/embed/sBvngg87998" frameborder="0" allowfullscreen>
 </iframe>
 </center>
 <br>
@@ -207,7 +205,8 @@ No Make-up was identified as being especially inconsistent in its sound and lyri
 <iframe width="560" height="315" align="middle" src="https://www.youtube.com/embed/DDau48PysuU" frameborder="0" allowfullscreen>
 </iframe>
 </center>
-<br> So, the combined sentiment score successfully corrected the mistakes made by the lyric sentiment score. I think it was equally successful in correcting for the mistakes in Spotify's measure of musical valence. For example, on the right side of the graph, we can see that "Blow My High (Members Only)" was identified as being the song with the greatest positive difference between musical sentiment and lyrical sentiment.
+<br>
+So, the combined sentiment score successfully corrected the mistakes made by the lyric sentiment score. I think it was equally successful in correcting for the mistakes in Spotify's measure of musical valence. For example, on the right side of the graph, we can see that "Blow My High (Members Only)" was identified as being the song with the greatest positive difference between musical sentiment and lyrical sentiment.
 
 The other interesting feature of the plot above is the songs that are the most self-consistent — the ones with the least differences between musical sentiment and lyrical sentiment. If you're a Kendrick fan and you scan through the songs with the smallest bars, you might notice something interesting: most of them are quite popular even among people who don't listen to Kendrick's albums. Could it be that songs with emotionally consistent lyrics and sounds are more likely to be hits?
 
