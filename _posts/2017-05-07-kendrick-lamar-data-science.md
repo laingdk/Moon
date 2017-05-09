@@ -17,7 +17,7 @@ I've included most of my code in the post, but if you're not into that, you shou
 - [Which of Kendrick's songs are the most positive or negative?](#head2)
 - [Which of Kendrick's songs are the most and least emotionally self-consistent?](#head3)
 - [Does emotional self-consistency predict a song's popularity?](#head4)
-- [What are the most representative words in each of Kendrick's albums](#link5)
+- [What are the most representative words in each of Kendrick's albums?](#link5)
 
 Let's get started!
 
