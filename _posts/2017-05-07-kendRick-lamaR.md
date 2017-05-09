@@ -4,7 +4,7 @@ title: KendRick LamaR
 description: Analysis of Kendrick Lamar's music and lyrics, using data from Spotify and Genius.
 comments: true
 published: true
-image: ../assets/img/kendrick/sentiment_plot.png
+image: "../assets/img/kendrick/sentiment_plot.png"
 ---
 
 Millions of people are listening to Kendrick Lamar's music, and many are analysing his lyrics too. On [Genius](https://genius.com/artists/Kendrick-lamar), a lyric annotation website, the songs on Kendrick's studio albums have over 70 million pageviews. Many of these songs have dozens of annotations, which are often refined by hundreds of contributors, including the Pulitzer-prize winning author [Michael Chabon](http://pitchfork.com/news/58421-kendrick-lamars-the-blacker-the-berry-gets-annotated-for-genius-by-pulitzer-winning-author-michael-chabon/).
