@@ -22,9 +22,8 @@
     <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.url }}">
     <meta property="og:site_name" content="{{ site.title }}">
     {% if page.feature %}{% capture feature %}{{ page.feature }}{% endcapture %}{% unless feature contains 'http://' or feature contains 'https://' %}{% capture feature %}{{ site.url }}/{{ feature }}{% endcapture %}{% endunless %}
-    <meta property="og:image:secure_url" content="{{ site.url }}/{{ feature }}">
-    {% else %}<meta name="og:image:secure_url" content="{{ site.title }}">
-    <meta name="og:image:secure_url" content="{{ site.url }}/{{ site.background }}">{% endif %}
+    <meta property="og:image" content="{{ site.url }}/{{ feature }}">
+    {% else %}<meta name="og:image" content="{{ site.url }}/{{ site.background }}">{% endif %}
     {% if site.google.verify %}
     <!-- Webmaster Tools verfication -->
     <meta name="google-site-verification" content="{{ site.google.verify }}">{% endif %}
