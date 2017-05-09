@@ -11,9 +11,20 @@ Millions of people are listening to Kendrick Lamar's music, and many are analysi
 
 But not too many people are analysing Kendrick's music with hard data, so I decided to give it a shot. A few months ago I read a fantastic data science blog post by Charlie Thompson which tried to pin down [the most depressing Radiohead song](http://rcharlie.com/2017-02-16-fitteR-happieR/), using data from Spotify and Genius. I modified Charlie's code to get the data on Kendrick's music. If you're interested, my script for scraping the data is [here](https://github.com/laingdk/kendrick/blob/master/src/scrape_kendrick.R), and the data itself is [here](https://github.com/laingdk/kendrick/blob/master/data/scraped_kendrick_data.csv).
 
-I've included most of my code in the post, but if you're not into that, you should be able follow along with the writing and the visualizations alone.
+I've included most of my code in the post, but if you're not into that, you should be able follow along with the writing and the visualizations alone. If you'd like to skip ahead to a question of interest, feel free:
 
-Let's get started! I began by loading the data and fixing some factor levels.
+- [What is the most analysed Kendrick Lamar song?](#head1)
+- [Which of Kendrick's songs are the most positive or negative?](#head2)
+- [Which of Kendrick's songs are the most emotionally self-consistent?](#head3)
+- [Does emotional self-consistency predict a song's popularity?](#head4)
+- [What are the most representative words in each of Kendrick's albums](#link5)
+
+Let's get started!
+
+<a name="head1"></a> What is the most analysed Kendrick Lamar song?
+-------------
+
+One measure of this is the number of annotations for a given song. The only problem is that some songs have fewer lyrics than others, and no lyric can have more than one annotation. So, I used the number of annotations per word. 
 
 ``` r
 # Read in the data.
@@ -27,11 +38,7 @@ kendrick <- kendrick %>% filter(album_name != "Overly Dedicated")
 
 # Fix the factor levels for the tracks.
 kendrick$track_name <- factor(kendrick$track_name, levels = as.character(kendrick$track_name))
-```
 
-The first thing I wanted to know was which of Kendrick's songs are the most analysed on Genius. One measure of this is the number of annotations for a given song. The only problem is that some songs have fewer lyrics than others, and no lyric can have more than one annotation. So, I used the number of annotations per word:
-
-``` r
 # Get the number of annotations per word.
 kendrick <- kendrick %>% mutate(ann_per_word = annotations/song_word_count)
 ```
@@ -54,7 +61,7 @@ Runner-up is [Rigamortis](https://genius.com/Kendrick-lamar-rigamortus-lyrics):
 </center>
 <br>
 
-The cool part
+<a name="head2"></a> Which of Kendrick's songs are the most positive or negative?
 -------------
 
 I wanted to know how musical and lyrical sentiment vary within and between Kendrick's albums. The first part is easy: Spotify's API provides a variable called "valence", which is defined as follows:
@@ -184,7 +191,7 @@ kendrick %>%
 
 Listen to any of these songs, and I think you'll at least agree with their classification as positive or negative, if not their rankings.
 
-The even cooler part
+<a name="head3"></a> Which of Kendrick's songs are the most emotionally self-consistent?
 --------------------
 
 Now here's where things get interesting. I wanted to know which songs had the greatest *differences* between their musical sentiment and their lyrical sentiment. For example, I wanted to know which songs sound happy but have sad lyrics, or vice versa. I was also curious to know which songs had the *least* differences between musical and lyrical sentiment; these would be the most self-consistent, the least ironic. For each song, I took the absolute value of the difference between the two measures of sentiment:
@@ -211,14 +218,14 @@ So, the combined sentiment score successfully corrected the mistakes made by the
 
 The other interesting feature of the plot above is the songs that are the most self-consistent — the ones with the least differences between musical sentiment and lyrical sentiment. If you're a Kendrick fan and you scan through the songs with the smallest bars, you might notice something interesting: most of them are quite popular even among people who don't listen to Kendrick's albums. Could it be that songs with emotionally consistent lyrics and sounds are more likely to be hits?
 
-The still cooler part
+<a name="head4"></a> Does emotional self-consistency predict a song's popularity?
 ---------------------
 
 I tried plotting the number of pageviews on Genius against the absolute difference between musical and lyrical sentiment.
 
 ![](../assets/img/kendrick/pageviews_plot.png)
 
-On the left side of the graph, you see songs with small differences between musical and lyrical sentiment — the self-consistent songs. On the right side, you see songs with large differences — the positive songs with negative lyrics, and vice versa. The y-axis is the number of pageviews on Genius, which I think is a decent measure of popularity. (To visit a song's page, not only would somebody usually have to know the song, but they would usually like it enough to wonder what the lyrics mean.)
+On the left side of the graph, you see songs with small differences between musical and lyrical sentiment — the self-consistent songs. On the right side, you see songs with large differences — the positive songs with negative lyrics, and vice versa. The y-axis is the number of pageviews on Genius, which I think is a decent measure of popularity. (To visit a song's page, not only would somebody usually have to know the song, but they would usually like it enough to wonder what the lyrics mean. I would like to see how this compares with the song's playcount on Spotify, but unfortunately Spotify's API doesn't provide that information.)
 
 This looked like a pretty strong pattern to me, but if I was going to do a fair test of my hypothesis, I realized that I should log-transform the pageviews to get more consistent dispersion. (If you click the plot, you can see an interactive version to find out which song is which.)
 
@@ -308,7 +315,7 @@ plot_albums <- album_words %>%
         mutate(word = factor(word, levels = rev(unique(word))))
 ```
 
-Below you can see the words with the highest tf-idf for each album:
+<a name="link5"></a> Below you can see the words with the highest tf-idf for each album:
 
 ![Representative words across Kendrick Lamar's discography](../assets/img/kendrick/album_top_words.png)
 
