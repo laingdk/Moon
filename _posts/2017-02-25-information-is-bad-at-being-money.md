@@ -4,9 +4,8 @@ title: Information is bad at being money
 description: In the digital world, purchases are often made with personal data rather than with money. This might turn out to be kind of absurd.
 comments: true
 published: true
+feature: assets/img/info_bad_at_being_money/info_vs_money.png
 ---
-
-![](../assets/img/info_bad_at_being_money/info_vs_money.png)
 
 What if, instead of paying money for your food, you had to implant in your upper palate a small sensor that would send information to your insurance company about everything you eat? What if, instead of paying money for your new mattress, you had to put a camera on your wall and record your bedroom activities, all to be uploaded constantly and automatically to the mattress company's database?
 
