@@ -15,7 +15,7 @@ I've included most of my code in the post, but if you're not into that, you shou
 
 - [What is the most analysed Kendrick Lamar song?](#head1)
 - [Which of Kendrick's songs are the most positive or negative?](#head2)
-- [Which of Kendrick's songs are the most emotionally self-consistent?](#head3)
+- [Which of Kendrick's songs are the most and least emotionally self-consistent?](#head3)
 - [Does emotional self-consistency predict a song's popularity?](#head4)
 - [What are the most representative words in each of Kendrick's albums](#link5)
 
@@ -191,7 +191,7 @@ kendrick %>%
 
 Listen to any of these songs, and I think you'll at least agree with their classification as positive or negative, if not their rankings.
 
-<a name="head3"></a> Which of Kendrick's songs are the most emotionally self-consistent?
+<a name="head3"></a> Which of Kendrick's songs are the most and least emotionally self-consistent?
 --------------------
 
 Now here's where things get interesting. I wanted to know which songs had the greatest *differences* between their musical sentiment and their lyrical sentiment. For example, I wanted to know which songs sound happy but have sad lyrics, or vice versa. I was also curious to know which songs had the *least* differences between musical and lyrical sentiment; these would be the most self-consistent, the least ironic. For each song, I took the absolute value of the difference between the two measures of sentiment:
