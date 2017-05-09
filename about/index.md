@@ -10,7 +10,7 @@ Hi! I'm David. I used to [teach writing](https://laingdk.github.io/teaching-port
 
 I'm currently working on my capstone project with three of my classmates. We're building an instructor-facing dashboard for data collected by [edX](https://www.edx.org/school/ubcx) in UBC's massive open online courses (MOOCs). I'm also looking for full-time employment as a data scientist, starting mid-July.
 
-In addition to my teaching experience, I have worked as a **research assistant** in McMaster University's [Physics Department](http://www.physics.mcmaster.ca/), a **teaching assistant** in the McMaster [Arts & Science Program](https://artsci.mcmaster.ca/), and a **business ethics intern** at [Ethical Systems](http://ethicalsystems.org/). I have an **Honours B.Arts Sc.** from McMaster University. For my thesis I wrote a novel, which I hope you never find.
+In addition to my teaching experience, I have worked as a **research assistant** in McMaster University's [Physics Department](http://www.physics.mcmaster.ca/), a **teaching assistant** in the McMaster [Arts & Science Program](https://artsci.mcmaster.ca/), and a **business ethics intern** at [Ethical Systems](http://ethicalsystems.org/). I have an **Honours B.Arts Sc.** from McMaster University. For my thesis I wrote a novel, which I hope you never find. I code in **Python**, **R**, and **SQL**.
 
 I like reading, music, podcasts, swimming, windsurfing, and squash (the sport, not the vegetable).
 
