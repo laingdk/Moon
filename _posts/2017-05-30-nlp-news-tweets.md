@@ -41,7 +41,7 @@ Identifying important stories was the main challenge of the project. At first I 
 
 ------------------------------------------------------------------------
 
-|              |       test | Japan  | ballistic |
+|  Tweet       |     "test" | "Japan" | "ballistic" |
 |--------------|-----------:|-------:|----------:|
 | North Korea fires missile into waters off Japan https://t.co/iBM24KTIyU  | 0 | 1 | 0 |
 | Japan to take 'concrete action' with US against North Korea after its latest ballistic missile test… https://t.co/ycZmzebnVa | 1 | 1 | 1 |
@@ -102,7 +102,7 @@ The above code turns this...
 
 ------------------------------------------------------------------------
 
-| screen\_name | text                                                                                  |
+| Author | Text                                                                                  |
 |:-------------|:--------------------------------------------------------------------------------------|
 | BBCNews      | RT @bbcnewsline: What happens to Irish border after Brexit? <https://t.co/30bnfp6k39> |
 
@@ -112,7 +112,7 @@ The above code turns this...
 
 ------------------------------------------------------------------------
 
-| screen\_name | word        |
+| Author | Word        |
 |:-------------|:------------|
 | BBCNews      | 30bnfp6k39  |
 | BBCNews      | brexit      |
@@ -148,7 +148,7 @@ Let's take a look at the tweets in my current dataset that have the highest conf
 
 ------------------------------------------------------------------------
 
-| screen\_name | created\_at                    |  conform\_score| text                                                                                                                                           |
+| Author | Creation Time                    |  Conformity Score | Text                                                                                                                                           |
 |:-------------|:-------------------------------|:---------------:|:-----------------------------------------------------------------------------------------------------------------------------------------------|
 | CNN          | Wed May 31 01:41:01 +0000 2017 |             162| Tiger Woods was found asleep at the wheel the morning of his arrest & his car had minor damage, police records show… <https://t.co/MRwPgKrqXC> |
 | BBCNews      | Tue May 30 14:57:29 +0000 2017 |             160| RT @BBCBreaking: Golfer Tiger Woods was found asleep at the wheel of his car, engine running, police report says - US media <https://t.co/q0>… |
