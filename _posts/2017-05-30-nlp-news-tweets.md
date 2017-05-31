@@ -6,11 +6,11 @@ description: A data science pipeline for identifying breaking news stories on Tw
 comments: true
 ---
 
-I completed [News360](https://news360.com/)'s NLP [test task](https://docs.google.com/document/d/1ziUlEDtOBChJzHvArc4GzQKJKG1s-Ut9IkzGAyzAdJI/edit#heading=h.o1egger9j1r), which is to write a data science pipeline that analyses tweets every ten minutes and sends a push notification when a big story breaks – but no more than twice per day.
+I completed [News360](https://news360.com/){:target="_blank"}'s NLP [test task](https://docs.google.com/document/d/1ziUlEDtOBChJzHvArc4GzQKJKG1s-Ut9IkzGAyzAdJI/edit#heading=h.o1egger9j1r){:target="_blank"}, which is to write a data science pipeline that analyses tweets every ten minutes and sends a push notification when a big story breaks – but no more than twice per day.
 
 I turned this pipeline into a Twitter bot, which is viewable here: 
 
-[https://twitter.com/news_nlp_bot](https://twitter.com/news_nlp_bot).
+[https://twitter.com/news_nlp_bot](https://twitter.com/news_nlp_bot){:target="_blank"}.
 
 This project came with some interesting challenges. In this post, I'll describe how I solved them.
 
@@ -22,9 +22,9 @@ This project came with some interesting challenges. In this post, I'll describe 
 <a name="head1"></a> 1. What data to use?
 --------------------
 
-Twitter's API provides many attributes for each [tweet](https://dev.twitter.com/overview/api/tweets){:target="_blank"} and each [user](https://dev.twitter.com/overview/api/users). I decided to keep things simple: I took each tweet's id, its creation time, its text, its favorite count, its retweet count, and its retweet status (i.e. whether or not it was itself a retweet). I also took each tweet's author's username and screen name.
+Twitter's API provides many attributes for each [tweet](https://dev.twitter.com/overview/api/tweets){:target="_blank"} and each [user](https://dev.twitter.com/overview/api/users){:target="_blank"}. I decided to keep things simple: I took each tweet's id, its creation time, its text, its favorite count, its retweet count, and its retweet status (i.e. whether or not it was itself a retweet). I also took each tweet's author's username and screen name.
 
-Most of these tweets link to full news stories on their respective publication's webpages. I considered scraping the text of the full stories using Python [Goose](https://github.com/grangier/python-goose), but decided to see how far I could get with the text of the tweets alone, since I anticipated there being some difficulties getting around paywalls. Not to mention that data from HTML can be quite messy.
+Most of these tweets link to full news stories on their respective publication's webpages. I considered scraping the text of the full stories using Python [Goose](https://github.com/grangier/python-goose){:target="_blank"}, but decided to see how far I could get with the text of the tweets alone, since I anticipated there being some difficulties getting around paywalls. Not to mention that data from HTML can be quite messy.
 
 As for how *much* data to store, I decided to keep only the tweets from the past 24 hours. This usually amounts to about 3500 tweets.
 
