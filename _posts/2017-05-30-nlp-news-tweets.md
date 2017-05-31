@@ -39,11 +39,16 @@ As for how *much* data to store, I decided to keep only the tweets from the past
 
 Identifying important stories was the main challenge of the project. At first I tried a few off-the-shelf clustering algorithms from sklearn, which required me to first vectorize the tweet texts. I created a document-term matrix, like the example below:
 
+------------------------------------------------------------------------
+
 |              |       test | Japan  | ballistic |
 |--------------|-----------:|-------:|----------:|
 | North Korea fires missile into waters off Japan https://t.co/iBM24KTIyU  | 0 | 1 | 0 |
 | Japan to take 'concrete action' with US against North Korea after its latest ballistic missile test… https://t.co/ycZmzebnVa | 1 | 1 | 1 |
 | MORE: If confirmed as a ballistic missile test, it would be the ninth such test conducted by North Korea this year. https://t.co/jP7hmAXhww | 2 | 0 | 1 |
+
+------------------------------------------------------------------------
+
 
 The real document-term matrix had one row for every tweet in the dataset, and one column for each of the top 200 most common words in the whole corpus (after removing [stop words](https://en.wikipedia.org/wiki/Stop_words)). With a few variants of the document-term matrix (word counts and [tf-idf](https://en.wikipedia.org/wiki/Tf%E2%80%93idf), with varying thresholds for inclusion in the matrix), I tried two clustering algorithms: [k-means](https://en.wikipedia.org/wiki/K-means_clustering) and [hierarchical clustering](https://en.wikipedia.org/wiki/Hierarchical_clustering).
 
@@ -95,11 +100,17 @@ cleaned_tweet_words <- tweet_words %>%
 
 The above code turns this...
 
+------------------------------------------------------------------------
+
 | screen\_name | text                                                                                  |
 |:-------------|:--------------------------------------------------------------------------------------|
 | BBCNews      | RT @bbcnewsline: What happens to Irish border after Brexit? <https://t.co/30bnfp6k39> |
 
+------------------------------------------------------------------------
+
 ...into this:
+
+------------------------------------------------------------------------
 
 | screen\_name | word        |
 |:-------------|:------------|
@@ -108,6 +119,8 @@ The above code turns this...
 | BBCNews      | border      |
 | BBCNews      | irish       |
 | BBCNews      | bbcnewsline |
+
+------------------------------------------------------------------------
 
 Then I simply counted the number of distinct authors who had used each word in the corpus, and added those counts up word-wise for each tweet:
 
@@ -133,12 +146,16 @@ I call this the conformity score. It's a measure of how much a tweet conforms to
 
 Let's take a look at the tweets in my current dataset that have the highest conformity score:
 
+------------------------------------------------------------------------
+
 | screen\_name | created\_at                    |  conform\_score| text                                                                                                                                           |
 |:-------------|:-------------------------------|:---------------:|:-----------------------------------------------------------------------------------------------------------------------------------------------|
 | CNN          | Wed May 31 01:41:01 +0000 2017 |             162| Tiger Woods was found asleep at the wheel the morning of his arrest & his car had minor damage, police records show… <https://t.co/MRwPgKrqXC> |
 | BBCNews      | Tue May 30 14:57:29 +0000 2017 |             160| RT @BBCBreaking: Golfer Tiger Woods was found asleep at the wheel of his car, engine running, police report says - US media <https://t.co/q0>… |
 | AP           | Tue May 30 16:20:12 +0000 2017 |             156| BREAKING: City of Cleveland fires police officer who shot 12-year-old Tamir Rice in 2014, suspends his partner for 10 days.                    |
 | CNN          | Tue May 30 11:20:34 +0000 2017 |             153| ISIS claims responsibility for a car bomb explosion outside an ice cream shop in Baghdad that killed at least 10… <https://t.co/tRzgpclJRN>    |
+
+------------------------------------------------------------------------
 
 These tend to be fairly big stories. That's because the words used in these tweets are used by many distinct authors in the dataset. You might think my bot would simply retweet the tweet with the highest conformity score, but it's not that simple.
 
@@ -176,7 +193,9 @@ There you have it! If you'd like to see what my bot has been up to recently, you
 
 <https://twitter.com/news_nlp_bot>
 
-If you're interested, you can also see my code on GitHub:
+If you're interested, you can also see all my code on GitHub:
+
+------------------------------------------------------------------------
 
 | Script | Description |
 |--------|-------------|
@@ -184,3 +203,5 @@ If you're interested, you can also see my code on GitHub:
 | [find_hot_tweets.R](https://github.com/laingdk/nlp_news_tweets/blob/master/src/find_hot_tweets.R) | R script for identifying big stories and determining which tweets to send as notifications. |
 | [notify.py](https://github.com/laingdk/nlp_news_tweets/blob/master/src/notify.py) | Python script for retweeting the selected tweet and doing some final cleanup on the stored data. |
 | [run_all.sh](https://github.com/laingdk/nlp_news_tweets/blob/master/run_all.sh) | Bash script for running the full pipeline in sequence. |
+
+------------------------------------------------------------------------
