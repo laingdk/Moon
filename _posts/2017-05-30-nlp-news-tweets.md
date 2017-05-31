@@ -39,42 +39,11 @@ As for how *much* data to store, I decided to keep only the tweets from the past
 
 Identifying important stories was the main challenge of the project. At first I tried a few off-the-shelf clustering algorithms from sklearn, which required me to first vectorize the tweet texts. I created a document-term matrix, like the example below:
 
-<table style="width:68%;">
-<colgroup>
-<col width="20%" />
-<col width="18%" />
-<col width="12%" />
-<col width="16%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th></th>
-<th align="right">test</th>
-<th align="right">Japan</th>
-<th align="right">ballistic</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>North Korea fires missile into waters off Japan <a href="https://t.co/iBM24KTIyU" class="uri">https://t.co/iBM24KTIyU</a></td>
-<td align="right">0</td>
-<td align="right">1</td>
-<td align="right">0</td>
-</tr>
-<tr class="even">
-<td>Japan to take 'concrete action' with US against North Korea after its latest ballistic missile test… <a href="https://t.co/ycZmzebnVa" class="uri">https://t.co/ycZmzebnVa</a></td>
-<td align="right">1</td>
-<td align="right">1</td>
-<td align="right">1</td>
-</tr>
-<tr class="odd">
-<td>MORE: If confirmed as a ballistic missile test, it would be the ninth such test conducted by North Korea this year. <a href="https://t.co/jP7hmAXhww" class="uri">https://t.co/jP7hmAXhww</a></td>
-<td align="right">2</td>
-<td align="right">0</td>
-<td align="right">1</td>
-</tr>
-</tbody>
-</table>
+|              |       test | Japan  | ballistic |
+|--------------|-----------:|-------:|----------:|
+| North Korea fires missile into waters off Japan https://t.co/iBM24KTIyU  | 0 | 1 | 0 |
+| Japan to take 'concrete action' with US against North Korea after its latest ballistic missile test… https://t.co/ycZmzebnVa | 1 | 1 | 1 |
+| MORE: If confirmed as a ballistic missile test, it would be the ninth such test conducted by North Korea this year. https://t.co/jP7hmAXhww | 2 | 0 | 1 |
 
 The real document-term matrix had one row for every tweet in the dataset, and one column for each of the top 200 most common words in the whole corpus (after removing [stop words](https://en.wikipedia.org/wiki/Stop_words)). With a few variants of the document-term matrix (word counts and [tf-idf](https://en.wikipedia.org/wiki/Tf%E2%80%93idf), with varying thresholds for inclusion in the matrix), I tried two clustering algorithms: [k-means](https://en.wikipedia.org/wiki/K-means_clustering) and [hierarchical clustering](https://en.wikipedia.org/wiki/Hierarchical_clustering).
 
@@ -165,13 +134,11 @@ I call this the conformity score. It's a measure of how much a tweet conforms to
 Let's take a look at the tweets in my current dataset that have the highest conformity score:
 
 | screen\_name | created\_at                    |  conform\_score| text                                                                                                                                           |
-|:-------------|:-------------------------------|---------------:|:-----------------------------------------------------------------------------------------------------------------------------------------------|
-| TIME         | Tue May 30 13:10:07 +0000 2017 |             165| Trump condemns Portland attack, Manuel Noriega dies and Tiger Woods blames meds for DUI charge. What to know today: <https://t.co/LwyomWVe7x>  |
+|:-------------|:-------------------------------|:---------------:|:-----------------------------------------------------------------------------------------------------------------------------------------------|
 | CNN          | Wed May 31 01:41:01 +0000 2017 |             162| Tiger Woods was found asleep at the wheel the morning of his arrest & his car had minor damage, police records show… <https://t.co/MRwPgKrqXC> |
 | BBCNews      | Tue May 30 14:57:29 +0000 2017 |             160| RT @BBCBreaking: Golfer Tiger Woods was found asleep at the wheel of his car, engine running, police report says - US media <https://t.co/q0>… |
 | AP           | Tue May 30 16:20:12 +0000 2017 |             156| BREAKING: City of Cleveland fires police officer who shot 12-year-old Tamir Rice in 2014, suspends his partner for 10 days.                    |
 | CNN          | Tue May 30 11:20:34 +0000 2017 |             153| ISIS claims responsibility for a car bomb explosion outside an ice cream shop in Baghdad that killed at least 10… <https://t.co/tRzgpclJRN>    |
-| msnuk        | Tue May 30 18:06:45 +0000 2017 |             151| Justin Bieber, Katy Perry and Niall Horan to join Ariana Grande for benefit concert for Manchester attack victims… <https://t.co/MfPjlQcsIF>   |
 
 These tend to be fairly big stories. That's because the words used in these tweets are used by many distinct authors in the dataset. You might think my bot would simply retweet the tweet with the highest conformity score, but it's not that simple.
 
@@ -188,13 +155,13 @@ In my script, a tweet has to meet several conditions for it to qualify as worthy
 
 `asymptote <-  0.99`
 
-$a = 0.99$
+$$a = 0.99$$
 
 The 99th percentile is the absolute minimum threshold that a tweet must meet, but this requirement is stricter the more recently a notification has been sent. (If we send a notification at 2:00pm, then we'd better have a very good reason to send another one at 3:00pm.) To set the minimum amount of time that must pass after a notification has been sent, before another one will be sent, we just need to add (1 − $a$) to that asymptote to push it above the 100th percentile, where no tweet can reach. But the value we add to the asymptote can decrease as more time passes, so that we're less stringent if we haven't sent a notification in the past 12 hours, say. To achieve this, we can use a reciprocal function:
 
-$C = a + (1-a)\left(\frac{t_{min}}{t_{prev}}\right)$,
+$$C = a + (1-a)\left(\frac{t_{min}}{t_{prev}}\right),$$
 
-where $C$ is the conformity score percentile threshold function, $t_{min}$ is the minimum amount of time (in hours) that must pass before a new notification is sent, and $t_{prev}$ is the amount of time that has passed since the previous notification was sent. Below, you can see two versions of the threshold function. The blue curve has $t_{min} = 1$, and the red curve has $t_{min} = 5$. You can see that if $t_{min}$ were set to 5, we would be forcing the system to wait a full five hours before any tweet could have a chance of being sent as a notification. After that, the minimum percentile decreases steadily as time passes.
+where *C* is the conformity score percentile threshold function, *t_min* is the minimum amount of time (in hours) that must pass before a new notification is sent, and *t_prev* is the amount of time that has passed since the previous notification was sent. Below, you can see two versions of the threshold function. The blue curve has *t_min* = 1, and the red curve has *t_min* = 5. You can see that if *t_min* were set to 5, we would be forcing the system to wait a full five hours before any tweet could have a chance of being sent as a notification. After that, the minimum percentile decreases steadily as time passes.
 
 ![](../assets/img/nlp_news_tweets/threshold_graph.png)
 
