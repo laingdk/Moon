@@ -148,7 +148,7 @@ Let's take a look at the tweets in my current dataset that have the highest conf
 
 ------------------------------------------------------------------------
 
-| Author | Creation Time                    |  Conformity Score | Text                                                                                                                                           |
+| Author | Creation Time                    |  Conformity | Text                                                                                                                                           |
 |:-------------|:-------------------------------|:---------------:|:-----------------------------------------------------------------------------------------------------------------------------------------------|
 | CNN          | Wed May 31 01:41:01 +0000 2017 |             162| Tiger Woods was found asleep at the wheel the morning of his arrest & his car had minor damage, police records show… <https://t.co/MRwPgKrqXC> |
 | BBCNews      | Tue May 30 14:57:29 +0000 2017 |             160| RT @BBCBreaking: Golfer Tiger Woods was found asleep at the wheel of his car, engine running, police report says - US media <https://t.co/q0>… |
