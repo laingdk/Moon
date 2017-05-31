@@ -203,5 +203,3 @@ If you're interested, you can also see all my code on GitHub:
 | [find_hot_tweets.R](https://github.com/laingdk/nlp_news_tweets/blob/master/src/find_hot_tweets.R) | R script for identifying big stories and determining which tweets to send as notifications. |
 | [notify.py](https://github.com/laingdk/nlp_news_tweets/blob/master/src/notify.py) | Python script for retweeting the selected tweet and doing some final cleanup on the stored data. |
 | [run_all.sh](https://github.com/laingdk/nlp_news_tweets/blob/master/run_all.sh) | Bash script for running the full pipeline in sequence. |
-
-------------------------------------------------------------------------
