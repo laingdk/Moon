@@ -174,7 +174,7 @@ In my script, a tweet has to meet several conditions for it to qualify as worthy
 
 $$a = 0.99$$
 
-The 99th percentile is the absolute minimum threshold that a tweet must meet, but this requirement is stricter the more recently a notification has been sent. (If we send a notification at 2:00pm, then we'd better have a very good reason to send another one at 3:00pm.) To set the minimum amount of time that must pass after a notification has been sent, before another one will be sent, we just need to add (1 − $a$) to that asymptote to push it above the 100th percentile, where no tweet can reach. But the value we add to the asymptote can decrease as more time passes, so that we're less stringent if we haven't sent a notification in the past 12 hours, say. To achieve this, we can use a reciprocal function:
+The 99th percentile is the absolute minimum threshold that a tweet must meet, but this requirement is stricter the more recently a notification has been sent. (If we send a notification at 2:00pm, then we'd better have a very good reason to send another one at 3:00pm.) To set the minimum amount of time that must pass after a notification has been sent, before another one will be sent, we just need to add (1 − *a*) to that asymptote to push it above the 100th percentile, where no tweet can reach. But the value we add to the asymptote can decrease as more time passes, so that we're less stringent if we haven't sent a notification in the past 12 hours, say. To achieve this, we can use a reciprocal function:
 
 $$C = a + (1-a)\left(\frac{t_{min}}{t_{prev}}\right),$$
 
