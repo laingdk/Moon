@@ -33,7 +33,7 @@ As for how *much* data to store, I decided to keep only the tweets from the past
 
 ------------------------------------------------------------------------
 
-*Note: The first part of this section is a bit technical. [Skip ahead](#technical), if you like. Or read some primers on [clustering](https://www.analyticsvidhya.com/blog/2016/11/an-introduction-to-clustering-and-different-methods-of-clustering/) and [vectorization](https://www.slideshare.net/jpatanooga/intro-to-vectorization-concepts-gatech), if you're not already familiar.*
+*Note: The first part of this section is a bit technical. [Skip ahead](#technical), if you like. Or read some primers on [clustering](https://www.analyticsvidhya.com/blog/2016/11/an-introduction-to-clustering-and-different-methods-of-clustering/){:target="_blank"} and [vectorization](https://www.slideshare.net/jpatanooga/intro-to-vectorization-concepts-gatech){:target="_blank"}, if you're not already familiar.*
 
 ------------------------------------------------------------------------
 
@@ -50,13 +50,13 @@ Identifying important stories was the main challenge of the project. At first I 
 ------------------------------------------------------------------------
 
 
-The real document-term matrix had one row for every tweet in the dataset, and one column for each of the top 200 most common words in the whole corpus (after removing [stop words](https://en.wikipedia.org/wiki/Stop_words)). With a few variants of the document-term matrix (word counts and [tf-idf](https://en.wikipedia.org/wiki/Tf%E2%80%93idf), with varying thresholds for inclusion in the matrix), I tried two clustering algorithms: [k-means](https://en.wikipedia.org/wiki/K-means_clustering) and [hierarchical clustering](https://en.wikipedia.org/wiki/Hierarchical_clustering).
+The real document-term matrix had one row for every tweet in the dataset, and one column for each of the top 200 most common words in the whole corpus (after removing [stop words](https://en.wikipedia.org/wiki/Stop_words){:target="_blank"}). With a few variants of the document-term matrix (word counts and [tf-idf](https://en.wikipedia.org/wiki/Tf%E2%80%93idf){:target="_blank"}, with varying thresholds for inclusion in the matrix), I tried two clustering algorithms: [k-means](https://en.wikipedia.org/wiki/K-means_clustering){:target="_blank"} and [hierarchical clustering](https://en.wikipedia.org/wiki/Hierarchical_clustering){:target="_blank"}.
 
-There were two problems with these approaches. The first problem is that there isn't a good way to choose the number of clusters to look for. If the goal had been simply to model the variance in the tweets as well as possible, then I could have done a grid search over some predefined list of *k*-values, and chosen the model with the best [silhouette](https://en.wikipedia.org/wiki/Silhouette_(clustering)) score. But the goal isn't to model the variance; the goal is to quickly identify a breaking news story, when it occurs, and then select the tweet that is most representative of that story. Besides, we know that the nature of the data is not that each tweet belongs to a clear cluster. The data does *not* look like this:
+There were two problems with these approaches. The first problem is that there isn't a good way to choose the number of clusters to look for. If the goal had been simply to model the variance in the tweets as well as possible, then I could have done a grid search over some predefined list of *k*-values, and chosen the model with the best [silhouette](https://en.wikipedia.org/wiki/Silhouette_(clustering)){:target="_blank"} score. But the goal isn't to model the variance; the goal is to quickly identify a breaking news story, when it occurs, and then select the tweet that is most representative of that story. Besides, we know that the nature of the data is not that each tweet belongs to a clear cluster. The data does *not* look like this:
 
 ![](../assets/img/nlp_news_tweets/strong_clusters.png)
 
-(In this dummy dataset, PC1 and PC2, or *principal component 1* and *principal component 2*, are linear combinations of the observed variables. Specifically, they are the linear combinations such that the variance of the data is maximized when projected on those linear combinations. They appear in this graph because I'm pretending to visualize a dataset that would actually have hundreds of dimensions, and would thus need to be flattened into just two dimensions. For more details, learn about [principal component analysis](https://en.wikipedia.org/wiki/Principal_component_analysis).)
+(In this dummy dataset, PC1 and PC2, or *principal component 1* and *principal component 2*, are linear combinations of the observed variables. Specifically, they are the linear combinations such that the variance of the data is maximized when projected on those linear combinations. They appear in this graph because I'm pretending to visualize a dataset that would actually have hundreds of dimensions, and would thus need to be flattened into just two dimensions. For more details, learn about [principal component analysis](https://en.wikipedia.org/wiki/Principal_component_analysis){:target="_blank"}.)
 
 Rather, a select few tweets will be lexically close to each other, and everything else will be scattered all across the feature space, more like this:
 
@@ -191,7 +191,7 @@ This part is pretty simple. My script allows a user to set weights on three twee
 
 There you have it! If you'd like to see what my bot has been up to recently, you can see its activity (and even follow it — though you'll make it blush) right here:
 
-<https://twitter.com/news_nlp_bot>
+<https://twitter.com/news_nlp_bot>{:target="_blank"}
 
 If you're interested, you can also see all my code on GitHub:
 
@@ -199,7 +199,7 @@ If you're interested, you can also see all my code on GitHub:
 
 | Script | Description |
 |--------|-------------|
-| [get_and_wrangle_tweets.py](https://github.com/laingdk/nlp_news_tweets/blob/master/src/get_and_wrangle_tweets.py) | Python script for querying the Twitter API and combining with the tweets that are currently in storage. |
-| [find_hot_tweets.R](https://github.com/laingdk/nlp_news_tweets/blob/master/src/find_hot_tweets.R) | R script for identifying big stories and determining which tweets to send as notifications. |
-| [notify.py](https://github.com/laingdk/nlp_news_tweets/blob/master/src/notify.py) | Python script for retweeting the selected tweet and doing some final cleanup on the stored data. |
-| [run_all.sh](https://github.com/laingdk/nlp_news_tweets/blob/master/run_all.sh) | Bash script for running the full pipeline in sequence. |
+| [get_and_wrangle_tweets.py](https://github.com/laingdk/nlp_news_tweets/blob/master/src/get_and_wrangle_tweets.py){:target="_blank"} | Python script for querying the Twitter API and combining with the tweets that are currently in storage. |
+| [find_hot_tweets.R](https://github.com/laingdk/nlp_news_tweets/blob/master/src/find_hot_tweets.R){:target="_blank"} | R script for identifying big stories and determining which tweets to send as notifications. |
+| [notify.py](https://github.com/laingdk/nlp_news_tweets/blob/master/src/notify.py){:target="_blank"} | Python script for retweeting the selected tweet and doing some final cleanup on the stored data. |
+| [run_all.sh](https://github.com/laingdk/nlp_news_tweets/blob/master/run_all.sh){:target="_blank"} | Bash script for running the full pipeline in sequence. |
