@@ -18,10 +18,10 @@ shinyUI(
 			plotOutput("main_plot", click = "plot_click"),
 			
 			##### INSERT THIS TAG ######
-			tags$head(tags$style( ######
-				'#main_plot {     ######
-				cursor: pointer;  ######
-				}'))              ######
+			tags$head(tags$style(
+				'#main_plot {
+				cursor: pointer;
+				}'))
 			############################
 			
 		)
