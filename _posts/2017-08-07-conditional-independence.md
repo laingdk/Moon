@@ -3,11 +3,11 @@ layout: post
 title: What is conditional independence?
 description: An intuitive explanation.
 comments: true
-published: false
+published: true
 feature: assets/img/conditional_independence/batman_robin_divorce.png
 ---
 
-Conditional independence is like a marriage that ends in divorce. Two people are bound together till death do they part, but for one reason or another the relationship seems wrong. So they file for divorce and, conditional on confirmation from a lawyer, they are henceforth independent in the eyes of the law.
+Conditional independence is like a marriage that ends in divorce. Two people are bound together till death do they part, but for one reason or another the relationship seems wrong. So they file for divorce and, conditional on assistance from a lawyer, they are henceforth independent in the eyes of the law.
 
 The "independent" part is a description of two parties' relationship to each other, and the "conditional" part is a description of their relationship's mediation by a third party, the lawyer. In probability, conditional independence is just this: *a relationship between two variables that is mediated by a third variable*.
 
@@ -77,4 +77,4 @@ This reads, "*A* is independent of *B*, given *C*."
 
 I think the most confusing thing about conditional independence is that in statistics, "these two variables are independent" is often said as a shorthand for "these two variables are useless for predicting each other." The word "independent" has a *negative* connotation. And yet a state of conditional independence between two variables arises only when you *learn the value of a third variable.* How can it be that to begin with, two variables are *useful* for predicting each other, but then you learn something new, and now those two variables are *useless* for predicting each other? Couldn't you just, you know, pretend you hadn't learned about that third variable?
 
-Well, you could. But that would be a bit like sitting in a trailer and pretending that you're moving forward because of the trailer rather than because of the truck that is pulling it. If you want to predict a person's height or their vocabulary size based on another variable, you should be happier if that other variable is *causing* the one you're interested in, rather than simply being *correlated* with it. Why is it better to find causality than to find correlation? Because it means that if you want to intervene, you won't waste resources trying to manipulate one variable through another. You can't make a child taller by forcing them to read the dictionary. But you can wait till they're older, and they'll become both taller and more erudite.
+Well, you could. But that would be a bit like sitting in a trailer and pretending that you're moving forward because of the trailer rather than because of the truck that is pulling it. If you want to predict a person's height or their vocabulary size based on another variable, you should be happier if that other variable is *causing* the one you're interested in, rather than simply being *correlated* with it. Why is it better to find causality than to find correlation? Because it means that if you want to intervene, you won't waste resources trying to manipulate a variable that exerts no causal force. You can't make a child taller by forcing them to read the dictionary. But you can wait till they're older, and they will grow taller and more erudite.
