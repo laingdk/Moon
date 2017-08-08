@@ -21,7 +21,7 @@ But then I tell you that I know somebody who is just 1'4". Are you willing to be
 
 When the value of one variable can help you guess the value of another variable, the two variables are said to be *dependent.* So, in the absence of any other information, height and vocabulary size are in fact dependent on each other. For better or for worse, the two variables are married.
 
-Now, if I tell you that I know two people who are 4 and 26 years old, you will be just as good at guessing their relative heights regardless of whether I tell you their vocabulary sizes. Given that you already know a person's age, you shouldn't pay a dime to learn their height if you're just trying to guess their vocabulary size, or vice versa. *Conditional on your knowledge of one variable, two other variables are independent of each other.* When you learn the value of that third variable, the lawyer steps in and the other two variables are officially divorced.
+Now, if I tell you that I know two people who are 4 and 26 years old, you will be just as good at guessing their relative heights regardless of whether I tell you their vocabulary sizes. Given that you already know a person's age, their height doesn't tell you about their vocabulary size, nor does their vocabulary size tell you about their height. *Conditional on your knowledge of one variable, two other variables are independent of each other.* When you learn the value of that third variable, the lawyer steps in and the other two variables are officially divorced.
 
 Let's get a bit more formal. When we talk about probability, we usually denote the probability of an event *A* as *Pr(A)*. Let's say the following:
 
