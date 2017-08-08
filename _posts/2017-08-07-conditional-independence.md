@@ -4,14 +4,16 @@ title: What is conditional independence?
 description: An intuitive explanation.
 comments: true
 published: true
-feature: assets/img/conditional_independence/batman_robin_divorce.png
+feature: assets/img/conditional_independence/abc.png
 ---
 
 Conditional independence is like a marriage that ends in divorce. Two people are bound together till death do they part, but for one reason or another the relationship seems wrong. So they file for divorce and, conditional on assistance from a lawyer, they are henceforth independent in the eyes of the law.
 
+![](../assets/img/conditional_independence/batman_robin_divorce.png)
+
 The "independent" part is a description of two parties' relationship to each other, and the "conditional" part is a description of their relationship's mediation by a third party, the lawyer. In probability, conditional independence is just this: *a relationship between two variables that is mediated by a third variable*.
 
-![](../assets/img/conditional_independence/batman_robin_divorce.png)
+![](../assets/img/conditional_independence/abc.png)
 
 For example: Is there a relationship between a person's height and the size of their vocabulary? To answer this question, you might begin by comparing the heights and vocabularies of your friends. You would probably conclude that there is no relationship. If I were to tell you that I know one person who is 5'8" and another who is 5'11", you wouldn't bet any money on their relative vocabulary sizes. It may seem, therefore, that height and vocabulary size are independent of each other: knowing the value of one doesn't tell you anything about the value of the other. If height and vocabulary size were people, then they were never even married in the first place.
 
