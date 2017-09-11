@@ -7,19 +7,21 @@ published: true
 feature: assets/img/conditional_independence/abc.png
 ---
 
-Conditional independence is like a marriage that ends in divorce. Two people are bound together till death do they part, but for one reason or another the relationship seems wrong. So they file for divorce and, conditional on assistance from a lawyer, they are henceforth independent in the eyes of the law.
+Conditional independence is like a marriage that ends in divorce. Two people are bound together till death do they part, but for some reason the relationship seems wrong. So they file for divorce and, conditional on assistance from a lawyer, they become legally independent.
 
 ![](../assets/img/conditional_independence/batman_robin_divorce.png)
 
-The "independent" part is a description of two parties' relationship to each other, and the "conditional" part is a description of their relationship's mediation by a third party, the lawyer. In probability, conditional independence is just this: *a relationship between two variables that is mediated by a third variable*.
+The "independent" part describes relationship to each other, and the "conditional" part describes their relationship's mediation by a third party, the lawyer. In probability, conditional independence is just this: *a relationship between two variables that is mediated by a third variable*.
 
 ![](../assets/img/conditional_independence/abc.png)
 
-For example: Is there a relationship between a person's height and the size of their vocabulary? To answer this question, you might begin by comparing the heights and vocabularies of your friends. You would probably conclude that there is no relationship. If I were to tell you that I know one person who is 5'8" and another who is 5'11", you wouldn't bet any money on their relative vocabulary sizes. It may seem, therefore, that height and vocabulary size are independent of each other: knowing the value of one doesn't tell you anything about the value of the other. If height and vocabulary size were people, then they were never even married in the first place.
+For example: Is there a relationship between a person's height and the size of their vocabulary? To answer this, you might start by comparing the heights and vocabularies of your friends. You would likely conclude that there is no relationship. If I were to tell you that I know one person who is 5'8" and another who is 5'11", you wouldn't bet any money on their relative vocabulary sizes. It may seem, therefore, that height and vocabulary size are independent: knowing the value of one doesn't tell you about the value of the other. If height and vocabulary size were people, then they were never even married in the first place.
 
-But then I tell you that I know somebody who is just 1'4". Are you willing to bet that this person's vocabulary size is smaller than those of the other two people? You should, because based on the information you've been given, this person is probably a toddler. As it turns out, people's heights and their vocabulary sizes are *not* independent. If you know the value of either variable, you can make a decent guess at the person's age, which will help you guess the approximate value of the other variable.
+But then I tell you that I know somebody who is just 1'4". Are you willing to bet that this person's vocabulary size is smaller than those of the other two people? You should, because based on the information you've been given, this person is probably a toddler.
 
-When the value of one variable can help you guess the value of another variable, the two variables are said to be *dependent.* So, in the absence of any other information, height and vocabulary size are in fact dependent on each other. For better or for worse, the two variables are married.
+So it turns out that people's heights and their vocabulary sizes are *not* independent. If you know the value of one of those variables, you can make a decent guess at the person's *age*, which will help you guess the value of the other variable.
+
+When the value of one variable can help you guess the value of another, the two variables are said to be *dependent.* In the absence of any other information, height and vocabulary size are in fact dependent on each other. For better or for worse, the two variables are married.
 
 Now, if I tell you that I know two people who are 4 and 26 years old, you will be just as good at guessing their relative heights regardless of whether I tell you their vocabulary sizes. Given that you already know a person's age, their height doesn't tell you about their vocabulary size, nor does their vocabulary size tell you about their height. *Conditional on your knowledge of one variable, two other variables are independent of each other.* When you learn the value of that third variable, the lawyer steps in and the other two variables are officially divorced.
 
@@ -49,7 +51,7 @@ This means, *The probability that {this person is in the 99th percentile for voc
 
 ...
 
-No, it's not true. If we know that a person is 1'4", it's reasonable to guess that they're a toddler, and that they are therefore much closer to the 1st percentile than to the 99th. The right-hand probability is, by definition, 1%. But the left-hand probability is infinitesimally small. There are simply no two-year-olds whose vocabularies are larger than 99% of all people.
+No, it's not true. If we know that a person is 1'4", it's fair to guess that they're a toddler, and that they are therefore closer to the 1st percentile than to the 99th. The right-hand probability is, by definition, 1%. But the left-hand probability is infinitesimally small. There are simply no two-year-olds whose vocabularies are larger than 99% of all people.
 
 Now consider the following statement:
 
