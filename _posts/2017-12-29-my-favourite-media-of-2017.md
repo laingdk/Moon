@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Favourite media in 2017
+title: My favourite media of 2017
 description: My favourite books, articles, videos, podcasts, music, and television in 2017
 comments: true
 ---
