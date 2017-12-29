@@ -178,18 +178,31 @@ $$BS = \frac{1}{N}\sum\limits _{t=1}^{N}(f_t-o_t)^2 \,\!$$
 where *f_t* is the probability that was forecast, *o_t* is the outcome of the event at instance *t* (0 if it doesn't happen and 1 if it does) and *N* is the number of forecasting instances.
 
 $$5*((0.99-1)^2) = 0.0005$$
+
 $$5*((0.95-1)^2) = 0.0125$$
+
 $$1*((0.95-0)^2) = 0.9025$$
+
 $$6*((0.90-1)^2) = 0.06$$
+
 $$2*((0.80-1)^2) = 0.08$$
+
 $$5*((0.80-0)^2) = 3.2$$
+
 $$2*((0.70-1)^2) = 0.18$$
+
 $$1*((0.70-0)^2) = 0.49$$
+
 $$1*((0.60-1)^2) = 0.16$$
+
 $$4*((0.60-0)^2) = 0.64$$
+
 $$1*((0.50-1)^2) = 0.25$$
+
 $$2*((0.50-0)^2) = 0.5$$
+
 $$\frac{0.0005+ 0.0125+ 0.9025+ 0.06+ 0.08+ 3.2+ 0.18+ 0.49+ 0.16+ 0.64+ 0.25+ 0.5}{35 \text{ forecasts}}$$
+
 $$= 0.185$$
 
 What does this mean? Let's graph my percentage of correct predictions across all confidence levels.
