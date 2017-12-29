@@ -209,7 +209,7 @@ What does this mean? Let's graph my percentage of correct predictions across all
 
 ![](../assets/img/2017_predictions_scoring/brier_scores.png)
 
-My Brier score is the average squared distance between the blue line and the red line.
+My Brier score – 0.185 – is the average squared distance between the blue line and the red line.
 
 Let's be frank: my calibration is not very good! While I was generally well calibrated for my very confident predictions, I was pretty dismally off the mark for my predictions at 80% and under. Specifically, I was [overconfident](https://en.wikipedia.org/wiki/Overconfidence_effect). Of my seven predictions at 80% confidence, I only got two correct. Of my five predictions at 60% confidence, I only got one correct. My calibration at 70% confidence was decent, but only for three predictions total, so I may have just been lucky.
 
