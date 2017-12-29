@@ -62,7 +62,7 @@ Alphabetical by creator's last name.
 
 * [Passengers, Rearranged](https://www.youtube.com/watch?v=Gksxu-yeWcU&t), by Evan Puschak
 * [Neural networks (playlist)](https://www.youtube.com/watch?v=aircAruvnKk&list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi), by Grant Sanderson
-* [Science Youtubers attemtping a graph theory puzzle](https://www.youtube.com/watch?v=VvCytJvd4H0), by Grant Sanderson
+* [Science Youtubers attempting a graph theory puzzle](https://www.youtube.com/watch?v=VvCytJvd4H0), by Grant Sanderson
 * [Mr. Rogers and the Power of Persuasion](https://www.youtube.com/watch?v=_DGdDQrXv5U), by Will Schoder
 
 ## Music
