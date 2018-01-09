@@ -1,8 +1,8 @@
 ---
 layout: post
 project: true
-title: Summary of data science experience
-description: Projects and tasks I've done in machine learning, statistics, programming, and related topics.
+title: Coursework in Master of Data Sciece program
+description: Mini-projects and assignments I did in machine learning, statistics, programming, and related topics as part of my coursework in the Master of Data Science program.
 comments: true
 ---
 ## Machine learning
