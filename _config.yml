@@ -1,5 +1,5 @@
 # Site
-title:              David Laing
+title:              David K. Laing
 bio:                "Data  Science | Learning Analytics | Teaching & Writing"
 description:        "David is a Canadian data scientist."
 reading_time:       true
@@ -8,7 +8,7 @@ logo:               'assets/img/homepage/headshot.png'
 background:         'assets/img/homepage/background.jpg'
 tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
 locale:             en_US
-url:                https://laingdk.github.io
+url:                https://davidklaing.github.io
 
 # Jekyll
 permalink:          /:title/
@@ -38,15 +38,15 @@ disqus_shortname:   laingdk-github-io
   #ad-slot:
 #bing-verify:
 #email:
-twitter:            davidlaing_92
+twitter:            davidklaing
 #facebook:           laingdk
-github-url:         laingdk
+github-url:         davidklaing
 #stackoverflow:     123456/username   from a "http://stackoverflow.com/users/123456/username" link
-linkedin:           davidkendalllaing
+linkedin:           davidklaing
 #xing:              username
 #instagram:          davidlaing_92
 #goodreads:         davidlaing_92
-rss:                David Laing
+rss:                David K. Laing
 #lastfm:            username
 #tumblr:            username
 #medium:            '@username'
