@@ -6,9 +6,9 @@ date: 2016-03-21
 comments: false
 ---
 
-Hi! I'm David. I am a data scientist at the [UBC Centre for Teaching, Learning and Technology](http://ctlt.ubc.ca/). I'm also a lecturer in the [Master of Data Science program](https://masterdatascience.science.ubc.ca/) at UBC.
+Hi! I'm David. I am a data scientist at [Imbellus](https://www.imbellus.com/#/). I'm also a lecturer in the [Master of Data Science program](https://masterdatascience.science.ubc.ca/) at UBC.
 
-I have worked as a research assistant in McMaster University's [Physics Department](http://www.physics.mcmaster.ca/), a teaching assistant in the McMaster [Arts & Science Program](https://artsci.mcmaster.ca/), a technical writing instructor at [Niagara College](http://www.niagaracollege.ca/), and a business ethics intern at [Ethical Systems](http://ethicalsystems.org/).
+I have worked as a research assistant in McMaster University's [Physics Department](http://www.physics.mcmaster.ca/), a teaching assistant in the McMaster [Arts & Science Program](https://artsci.mcmaster.ca/), a technical writing instructor at [Niagara College](http://www.niagaracollege.ca/), a business ethics intern at [Ethical Systems](http://ethicalsystems.org/), and a data scientist at the [UBC Centre for Teaching, Learning and Technology](http://ctlt.ubc.ca/).
 
 I have a Master of Data Science from the University of British Columbia, and an Honours Bachelor of Arts & Science from McMaster University.
 
