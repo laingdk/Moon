@@ -6,11 +6,11 @@ date: 2016-03-21
 comments: false
 ---
 
-I'm a data scientist and teacher, with a special interest in the intersection of statistics and language. I think that effective data analysis is as much about statistical methodology as it is about connecting the right numbers to the right words.
+I am an interdisciplinary data scientist and teacher, with special interests in data visualization and statistical software development, especially in the R ecosystem.
 
-After graduating from the first cohort of UBC's [Master of Data Science program](https://masterdatascience.science.ubc.ca/) in the summer of 2017, I went on to [redesign and teach a course](https://ubc-mds.github.io/2017-11-10-DSCI-542-communication/) in the program, DSCI 542 Communication and Argumentation, which prepares students for the challenges of communicating as a data scientist. During that year I also worked as a data scientist on UBC's Learning Analytics project at the [Centre for Teaching, Learning, and Technology](https://ctlt.ubc.ca/): I carried out exploratory projects to inform the university's long-term plan for using data to improve teaching and learning. Now I'm working as a data scientist at [Imbellus](https://www.imbellus.com/#/), a startup that is building a novel assessment of problem-solving ability.
+My full-time job is on the data science team at [Imbellus](https://www.imbellus.com/), a venture-backed startup that is building simulation-based cognitive assessments. At Imbellus I write scoring software, develop predictive models of hiring outcomes, and conduct analyses to inform assessment designs. I also present to clients, interview candidates for our growing team, and work across disciplines with our psychometricians, learning scientists, game designers, and engineers.
 
-I program mainly in Python and R. I prefer Python for machine learning, and I prefer R for wrangling and visualization.
+I also teach a [course](https://ubc-mds.github.io/2017-11-10-DSCI-542-communication/) on communication and argumentation in the [Master of Data Science program](https://masterdatascience.science.ubc.ca/) at the University of British Columbia. The course is about how to be clear, persuasive, and judicious when writing, speaking, and programming in data science contexts.
 
 ### Contact me
 
